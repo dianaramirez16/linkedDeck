@@ -29,20 +29,18 @@ public class menuClient {
       */
       //    System.out.println("Dequeued item is "+ q.dequeue().key);
             
-            //arraylist
-            ArrayList<Card> myDeck = Deck.newDeck();
-            /*System.out.println(myList);
-          *//*  myList.add(10); //no elements, adds to index 0
-            myList.add(20);*//*
-            System.out.println(myList);
-            myList.remove(0);
-            System.out.println(myList);
-            myList.remove(-1);
-            System.out.println(myList);*/
+            //stack
+            Stack<Card> myDeck = new Stack<>(); // create default stack
             
-            System.out.println(myDeck.toString());
-            
+           
             
       }
 
+
+
+      public static Stack<Card> createDeck(){
+            Stack<Card> myDeck = new Stack<>();
+            return myDeck;
+      }
+      
 }

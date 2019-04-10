@@ -1,12 +1,12 @@
-public class ArrayStack<Card> {
+public class Stack<Card> {
       
       //storage for the stack
       private Card[] theData;
       private int TOS =-1; //indicates nothing is there initially
-      private static final int INITIAL_CAPACITY =10;
+      private static final int INITIAL_CAPACITY =52;
       
       //default constructor to create stack
-      public ArrayStack() {
+      public Stack() {
             this.theData= (Card[]) new Object[INITIAL_CAPACITY]; //cast to Card
             //this.TOS =1; you can initialize here as well
             
