@@ -11,45 +11,45 @@ public class singleLinkedList {
       }
       
       //addfirst must copy head node "next" to node being inserted
-      public void addFirst(Object item) {
+      public void addFirst(Card card) {
             /* step by step :
-             * Node first = new Node(item); //creates the node
+             * Node first = new Node(card); //creates the node
              * first.next = head.next; //sets next value using head value
              * head.next = first; //updates head.next pointer
              */
-            head.next = new Node(item, head.next);
+            head.next = new Node(card, head.next);
             size++; //add to count size
       }
       
       //addAfter method to insert value after a node
-      public void addAfter(Object item, Node target) {
+      public void addAfter(Card card, Node target) {
             /* step by step :
-             * Node insert = new Node(item); //creates the node
+             * Node insert = new Node(card); //creates the node
              * insert.next = target.next; //sets next value using head value
              * target.next = insert; //updates head.next pointer
              */
-            target.next = new Node(item, target.next);
+            target.next = new Node(card, target.next);
             size++;
       }
       
       //overload addAfter method
-      public void addAfter(Object item, int index) {
+      public void addAfter(Card card, int index) {
             /* step by step:
              * Node target = getNode(index)
-             * addAfter(item, target);
+             * addAfter(card, target);
              * altogether:
              */
             if(index<0 || index>size) {
                   System.out.println("cannot add at given index.");
                   return;
             }
-            addAfter(item, getNode(index));
+            addAfter(card, getNode(index));
       }
       
       // method to insert at the end of LL
-      public void addLast(Object item) {
+      public void addLast(Card card) {
             Node target = getNode(size);  //get reference of last node
-            this.addAfter(item, target);  //use addAfter() method to insert
+            this.addAfter(card, target);  //use addAfter() method to insert
       }
       
       private Node getNode(int index) {

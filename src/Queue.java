@@ -8,7 +8,7 @@ public class Queue {
       // front, rear, & size are methods of a queue. first in first out
       
       //Data
-      // private Object[] Q;     //array reference for the actual queue. queue is null atm
+      // private Card[] Q;     //array reference for the actual queue. queue is null atm
       // private int capacity;   //max elements in queue
       // private final int DEFAULT_CAPACITY=52; // default cap
       
@@ -18,9 +18,9 @@ public class Queue {
             return;
       }
       
-      public void enQueue(Object obj) {          // this method adds elements to the Queue
+      public void enQueue(Card card) {          // this method adds elements to the Queue
             //first create new node
-            QNode temp = new QNode(obj);
+            QNode temp = new QNode(card);
             if (this.rear ==null) {
                   this.front = this.rear = temp;  //set new node to front and rear pointers if it's the only one
                   return;
