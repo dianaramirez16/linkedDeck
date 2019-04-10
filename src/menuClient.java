@@ -22,7 +22,6 @@ public class menuClient {
             Q.offer(20); System.out.println(Q);
             Q.offer(30); System.out.println(Q);
             Q.offer(40); System.out.println(Q);
-      
             Q.poll(); System.out.println(Q);
             Q.poll(); System.out.println(Q);
             Q.offer(50); System.out.println(Q);
@@ -31,7 +30,17 @@ public class menuClient {
             Q.offer(70); System.out.println(Q);
             Q.offer(80); System.out.println(Q);
             Q.offer(90); System.out.println(Q);
-      
+            
+            //arraylist
+            ArrayList<Integer> myList = new ArrayList<>();
+            System.out.println(myList);
+            myList.add(10); //no elements, adds to index 0
+            myList.add(20);
+            System.out.println(myList);
+            myList.remove(0);
+            System.out.println(myList);
+            myList.remove(-1);
+            System.out.println(myList);
       }
 
 }
