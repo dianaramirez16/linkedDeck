@@ -23,4 +23,14 @@ public class Card {
       public void setCardValue(CardValue cardValue) {
             this.cardValue = cardValue;
       }
+      
+      public int compareTo(Card o) {
+            return -this.getCardValue().compareTo(o.getCardValue());
+      }
+      
+      public String toString() {
+            return cardValue + " of " + suit /* + "(" + cardValue() + ")"*/;
+      }
+      
+      
 }
