@@ -1,9 +1,10 @@
-//this is the node for the single linked list
+//this is the node for the QUEUE
+//reference: https://www.geeksforgeeks.org/queue-set-2-linked-list-implementation/
 public class QNode {
       //data
       Object data;
       //link
-      Node next;
+      QNode next;
       
       //constructors
       //default constructors
@@ -14,7 +15,7 @@ public class QNode {
       
       //overloaded constructor
       //creates a node and points it to another node
-      public QNode(Object data, Node next) {
+      public QNode(Object data, QNode next) {
             this.data = data;
             this.next = next;
       }
