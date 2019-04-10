@@ -1,149 +1,70 @@
-public class ArrayList <Card> implements ArrayInterface <Card>  {
+public class ArrayStack <card> {
       
-      private int size; //how many elements in the AL
-      private int capacity; //how big is the AL
-      private Card[] myArray; //this does not create the array,
-      //that comes in the constructor later.
-      //this is a reference to the actual array
+      //storage for the stack
+      private E[] theData;
+      private int TOS =-1; //indicates nothing is there initially
+      private static final int INITIAL_CAPACITY =10;
       
-      //constructors
-      //default constructor, creates an array list of size 5
-      public ArrayList() {
-            this.capacity =52;
-            this.size =0;  //initially there is no data
-            myArray = (Card[]) new Object[this.capacity]; //creates array at default size
-      }
-      
-      
-      //overhead constructor
-      public ArrayList(ArrayList<Card> capacity) {
-            this.size=0;
-            myArray = (Card[]) new Object[this.capacity]; //creates array at default size
-      }
-      
-      @Override
-      public void add(Card a) {
-            // this method adds an element to the end of the array list
-            if (size<capacity) { //if true, there is space
-                  myArray[size]=a; // size set to first empty location
-                  size++; // keeps track of # of elements in the array
-            } else { //false, there is no space to add
-                  System.out.print("not enough space, call reallocate method");
-                  this.reallocate();
-                  this.add(a);
-            }
+      //default constructor to create stack
+      public ArrayStack() {
+            this.theData= (E[]) new Object[INITIAL_CAPACITY]; //cast to E
+            //this.TOS =1; you can initialize here as well
             
       }
       
-      private void reallocate() {
-            // double capacity of array list
-            this.capacity*=2;
-            Card[] temp= (Card[]) new Object[this.capacity];
-            //creates empty array double the size
-            //next step is to copy over elements to new array
-            for(int i=0; i< myArray.length; i++) {
-                  temp[i] = myArray[i];
+      @Override
+      public E push(E obj) {
+            // adds elements to the stack
+            // first check if there is enough space
+            if (TOS ==this.theData.length -1) {//this is stack full
+                  System.out.println("Stack Overflow..!!");
+                  //need to call reallocate() to increase the capacity
+                  return null; //get out of method
             }
-            //updates the reference to point to the new array
-            this.myArray =temp;
+		/* TOS++; //go to proper index
+		this.theData[TOS] = obj;  // you can have these three or change void to E obj
+		return;  */
+            
+            return (this.theData[++TOS] =obj);
       }
       
-      
       @Override
-      public void add(int index, Card a) {
-            // this method will add data to given index
-            // check if index is valid
-            if (index<0 ||index> size) {
-                  System.out.println("invalid index");
-                  return;
-            } else if (index ==size) { //indicates element needs to be added at the end of the array
-                  //method already exists for adding the end, call it here
-                  this.add(a);
+      public E pop() {
+            // this method will delete an element from the stack
+            // first check if there is an element to delete
+            if(!isEmpty()) {
+                  E temp = this.theData[TOS]; //save the data first
+                  TOS--; 						// decrement the TOS
+                  return temp;  				//return the element
+                  //return this.theData[TOS--]; // alt method
             } else {
-                  //data will be inserted by shifting the elements
-                  //check if there is space to shift
-                  if (this.capacity ==this.size) { //means array is full if true
-                        //need to call reallocate method if full
-                        this.reallocate();
-                  } else { //space is available
-                        //shift from end to index, right to left by 1
-                        for(int i=size-1; i>index; i--) {
-                              this.myArray[i] = this.myArray[i-1];
-                        }
-                        
-                        this.myArray[index]=a;
-                        this.size++; // updates the number of elements
-                  }
-                  
+                  System.out.println("Stack underflow");
             }
-      }
-      
-      @Override
-      public Card remove(int index) {
-            // this method deletes an element from the given index
-            // make sure the index is valid
-            if (index<0 || index >=size) {
-                  System.out.println("Invalid index!");
-                  return null;  //programs expects return, so just enter null
-            }
-            // here we will save the element to be deleted in a temp
-            Card temp = myArray[index];
-            // then we will shift elements to the left
-            for(int i =index; i<size -1; i++) {
-                  this.myArray[i] = this.myArray[i+1];
-            }
-            //now we update the size of the array because an element has been removed
-            size--;
-            return temp;
-      }
-      
-      @Override
-      public Card get(int index) {
             
-            /// --- copied from remove method ---
-            if (index<0 || index >=size) {
-                  System.out.println("Invalid index!");
-                  return null;  //programs expects return, so just enter null
-            }
-            /// --- end copy----
-            return myArray[index];
+            return null;
       }
       
-      
       @Override
-      public void set(int index, Card a) {
+      public E peek() {
             // TODO Auto-generated method stub
-            
+            return null;
       }
       
       @Override
-      public int getSize() {
-            return this.size;
-      }
-      
-      @Override
-      public int indexOf(Card a) {
-            // return the index of the value being searched
+      public boolean isEmpty() {
+            // check if TOS = -1
+            /* if (TOS==-1) {
+             * return true;
+             * } else return false;   //the long method
+             */
             
-            for (int i=0; i<size; i++) {
-                  //go over array and check all elements
-                  if (myArray[i].equals(a)) {
-                        return 1;
-                  }
-            }
-            return -1; // if nothing is matched to search, then element is not found
+            return (TOS ==-1);  //short method
       }
       
-      //if any of these are removed then it becomes an abstract class
-      //you can add any methods to this list
-      
-      //create method to print arrayList
-      //override for the toString method needed
-      public String toString() {
-            System.out.println("AL: ");
-            String s = " ";
-            for (int i =0; i<size; i++) { //concatenates and formats print out of data
-                  s = s+myArray[i] + " | ";
+      public String toString() { //displays stack contents
+            String s= "Stack: ";
+            for (int i =0; i<=TOS; i++) {
+                  s+= this.theData[i] + " | ";
             }
             return s;
       }
