@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a79c8f9b-cfbc-4a89-a11a-00d58f4bbd33" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/ArrayInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Queue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menuClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menuClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArrayStack.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,10 +41,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ArrayList.java">
+        <entry file="file://$PROJECT_DIR$/src/ArrayStack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+            <state>
+              <caret column="25" selection-start-column="25" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -143,20 +140,21 @@
       <find>arrayClass</find>
       <find>CircularQueue</find>
       <find>int</find>
-      <find>E</find>
       <find>int</find>
       <find>Object</find>
-      <find>obj</find>
       <find>item</find>
       <find>data</find>
       <find>reall</find>
+      <find>E</find>
+      <find>obj</find>
+      <find>@Override</find>
     </findStrings>
     <replaceStrings>
       <replace>CircularQueue</replace>
       <replace>ArrayList</replace>
       <replace>Queue</replace>
-      <replace>card</replace>
       <replace>Card</replace>
+      <replace>card</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -178,6 +176,7 @@
         <option value="$PROJECT_DIR$/src/Queue.java" />
         <option value="$PROJECT_DIR$/src/menuClient.java" />
         <option value="$PROJECT_DIR$/src/ArrayList.java" />
+        <option value="$PROJECT_DIR$/src/ArrayStack.java" />
       </list>
     </option>
   </component>
@@ -216,7 +215,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554888277135" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554888464470" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -409,13 +408,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Queue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="60" column="67" lean-forward="true" selection-start-line="60" selection-start-column="67" selection-end-line="60" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/menuClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-85">
@@ -437,10 +429,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ArrayList.java">
+    <entry file="file://$PROJECT_DIR$/src/Queue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        <state relative-caret-position="1003">
+          <caret line="60" column="67" lean-forward="true" selection-start-line="60" selection-start-column="67" selection-end-line="60" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ArrayStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" selection-start-column="25" selection-end-column="25" />
         </state>
       </provider>
     </entry>
