@@ -1,28 +1,28 @@
-public class ArrayList <E> implements ArrayInterface <E>  {
+public class ArrayList <Card> implements ArrayInterface <Card>  {
       
       private int size; //how many elements in the AL
       private int capacity; //how big is the AL
-      private E[] myArray; //this does not create the array,
+      private Card[] myArray; //this does not create the array,
       //that comes in the constructor later.
       //this is a reference to the actual array
       
       //constructors
       //default constructor, creates an array list of size 5
       public ArrayList() {
-            this.capacity =5;
+            this.capacity =52;
             this.size =0;  //initially there is no data
-            myArray = (E[]) new Object[this.capacity]; //creates array at default size
+            myArray = (Card[]) new Object[this.capacity]; //creates array at default size
       }
       
       
       //overhead constructor
-      public ArrayList(int capacity) {
+      public ArrayList(ArrayList<Card> capacity) {
             this.size=0;
-            myArray = (E[]) new Object[this.capacity]; //creates array at default size
+            myArray = (Card[]) new Object[this.capacity]; //creates array at default size
       }
       
       @Override
-      public void add(E a) {
+      public void add(Card a) {
             // this method adds an element to the end of the array list
             if (size<capacity) { //if true, there is space
                   myArray[size]=a; // size set to first empty location
@@ -38,7 +38,7 @@ public class ArrayList <E> implements ArrayInterface <E>  {
       private void reallocate() {
             // double capacity of array list
             this.capacity*=2;
-            E[] temp= (E[]) new Object[this.capacity];
+            Card[] temp= (Card[]) new Object[this.capacity];
             //creates empty array double the size
             //next step is to copy over elements to new array
             for(int i=0; i< myArray.length; i++) {
@@ -50,7 +50,7 @@ public class ArrayList <E> implements ArrayInterface <E>  {
       
       
       @Override
-      public void add(int index, E a) {
+      public void add(int index, Card a) {
             // this method will add data to given index
             // check if index is valid
             if (index<0 ||index> size) {
@@ -79,7 +79,7 @@ public class ArrayList <E> implements ArrayInterface <E>  {
       }
       
       @Override
-      public E remove(int index) {
+      public Card remove(int index) {
             // this method deletes an element from the given index
             // make sure the index is valid
             if (index<0 || index >=size) {
@@ -87,7 +87,7 @@ public class ArrayList <E> implements ArrayInterface <E>  {
                   return null;  //programs expects return, so just enter null
             }
             // here we will save the element to be deleted in a temp
-            E temp = myArray[index];
+            Card temp = myArray[index];
             // then we will shift elements to the left
             for(int i =index; i<size -1; i++) {
                   this.myArray[i] = this.myArray[i+1];
@@ -98,7 +98,7 @@ public class ArrayList <E> implements ArrayInterface <E>  {
       }
       
       @Override
-      public E get(int index) {
+      public Card get(int index) {
             
             /// --- copied from remove method ---
             if (index<0 || index >=size) {
@@ -111,7 +111,7 @@ public class ArrayList <E> implements ArrayInterface <E>  {
       
       
       @Override
-      public void set(int index, E a) {
+      public void set(int index, Card a) {
             // TODO Auto-generated method stub
             
       }
@@ -122,7 +122,7 @@ public class ArrayList <E> implements ArrayInterface <E>  {
       }
       
       @Override
-      public int indexOf(E a) {
+      public int indexOf(Card a) {
             // return the index of the value being searched
             
             for (int i=0; i<size; i++) {

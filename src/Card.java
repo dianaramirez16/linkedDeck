@@ -1,9 +1,11 @@
+//reference: https://gist.github.com/Rob-bie/b490814b4b7cbb070d58
 //reference: https://howtoprogramwithjava.com/enums/
+
 public class Card {
       private CardSuit suit;
       private CardValue cardValue;
       
-      public Card (CardValue cardValue, CardSuit suit) {
+      protected Card (CardValue cardValue, CardSuit suit) {
             this.cardValue = cardValue;
             this.suit = suit;
       }
