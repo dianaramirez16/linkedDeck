@@ -66,12 +66,12 @@ public class singleLinkedList {
             // at the end of this for loop you are pointing to the index provided
             return iter;
       }
-      //method to remove data from the beginning of the list
+      //method to remove card from the beginning of the list
       public Node removeFirst() {
             //check if there is an object to remove
             if (size==0) {
-                  //there is no data
-                  System.out.println("there is no data");
+                  //there is no card
+                  System.out.println("there is no card");
                   return null;
             }
             Node temp = head.next; //store in temp reference to return
@@ -91,7 +91,7 @@ public class singleLinkedList {
             return temp;
       }
       
-      //method to remove data after a target node
+      //method to remove card after a target node
       public Node removeAfter(int target) {
             //check if valid node
             Node temp = getNode(target);
@@ -107,7 +107,7 @@ public class singleLinkedList {
             String value = "List: ";
             Node temp = head; //iterator to go over the nodes starting at the head
             while(temp.next !=null) { //while there is still a next
-                  value += " | " + temp.next.data;  //get node data
+                  value += " | " + temp.next.card;  //get node card
                   temp = temp.next;				// move to next node
             }
             return value;
@@ -127,14 +127,14 @@ public class singleLinkedList {
       //overloaded method that actually prints the list
       private void printReverse(Node current) {
             //steps: we only print a node if the next is null
-            //else we print the next nodes data before current
+            //else we print the next nodes card before current
             
             if(current.next==null) { //points at last node, ok to print
-                  System.out.print(current.data + " <- ");
+                  System.out.print(current.card + " <- ");
             } else { //points at inner node
                   printReverse(current.next);
                   //once the next node is printed, then you can print current
-                  System.out.print(current.data + " <- ");
+                  System.out.print(current.card + " <- ");
             }
             
             
