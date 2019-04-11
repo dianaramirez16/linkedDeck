@@ -36,7 +36,22 @@ public class menuClient {
             System.out.println("sys:" + myDeck.toString());
             
       }
-
+      
+      //method to generate players. each player gets a linked list "hand"
+      public static void createPlayers() {
+            String[] deck = new deck[13];  //placeholder for player's hand. could be linked list
+            String playerName="Player";
+            for (int i =0; i<4; i++){  //loops 4 times to create 4 players
+                  Players(setName(), deck[]);  //creates players
+                  
+                  System.out.println(Players.getName());  //prints players
+            }
+            
+      }
+      //method to select random player to start
+      //
+      
+      
       
       
 }

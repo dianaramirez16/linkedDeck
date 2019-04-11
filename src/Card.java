@@ -4,10 +4,12 @@
 public class Card {
       private CardSuit cardSuit;
       private CardValue cardValue;
+      String playerName="null";
       
       protected Card (CardValue cardValue, CardSuit cardSuit) {
             this.cardValue = cardValue;
             this.cardSuit = cardSuit;
+            this.playerName="null";
       }
       
       public CardSuit getCardSuit() {
@@ -26,14 +28,11 @@ public class Card {
             this.cardValue = cardValue;
       }
       
-      
-      
-      
       public Boolean equalsTo(Card p, Card o) {
             if (p.getCardValue().equals(o.getCardValue())){  //cards are the same number
                   if(p.cardSuit.getCardSuit() > (o.cardSuit.getCardSuit())) {  //compare cardSuits p>o
                         return true;
-                  } else return false;  //o > p 
+                  } else return false;  //o > p
             } else if (p.cardValue.getCardValue() > (o.cardValue.getCardValue())) { // p>o card number is greater
                   return true;
             } else return false;  //o > p

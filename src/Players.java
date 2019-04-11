@@ -1,9 +1,9 @@
 public class Players {
-      Deck[] handOfCards;
-      String name;
-      int wins;
-      int losses;
-      Boolean isWinner=false;
+      public static Deck[] handOfCards;
+      public static String name;
+      public static int wins;
+      public static int losses;
+      public static Boolean isWinner=false;
       
       public Players(String n, Deck[] h){
             this.handOfCards =h;
@@ -13,55 +13,44 @@ public class Players {
             isWinner=false;
       }
       
-      public String getName() {
+      public static String getName() {
             return name;
       }
       
-      public Deck[] getHandOfCards() {
+      public static Deck[] getHandOfCards() {
             return handOfCards;
       }
       
-      public int getWins() {
+      public static int getWins() {
             return wins;
       }
       
-      public int getLosses() {
+      public static int getLosses() {
             return losses;
       }
       
-      public Boolean getWinner() {
+      public static Boolean getWinner() {
             return isWinner;
       }
       
-      public void setWinner(Boolean winner) {
+      public static void setWinner(Boolean winner) {
             isWinner = winner;
       }
       
-      public void setHandOfCards(Deck[] handOfCards) {
-            this.handOfCards = handOfCards;
+      public static void setHandOfCards(Deck[] h) {
+            handOfCards = h;
       }
       
-      public void setLosses(int losses) {
-            this.losses = losses;
+      public static void setLosses(int l) {
+            losses = l;
       }
       
-      public void setName(String name) {
-            this.name = name;
+      public static void setName(String n) {
+            name = n;
       }
       
-      public void setWins(int wins) {
-            this.wins = wins;
+      public static void setWins(int w) {
+            wins = w;
       }
-      
-      @Override
-      public String toString() {
-            return super.toString();
-      }
-      
-      @Override
-      public boolean equals(Object obj) {
-            return super.equals(obj);
-      }
-      
       
 }
