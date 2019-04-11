@@ -30,9 +30,9 @@ public class menuClient {
       //    System.out.println("Dequeued item is "+ q.dequeue().key);
             ArrayList<Card> myDeck = Deck.newDeck();
             //myDeck.add(Card card);
-            for (Card c : myDeck) {
+          /*  for (Card c : myDeck) {
                   System.out.println(c);
-            }
+            }*/
             System.out.println("sys:" + myDeck.toString());
             
       }
