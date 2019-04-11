@@ -112,7 +112,13 @@ public class ArrayList <E> implements ArrayInterface<E> {
       
       
       public void set(int index, E a) {
-            // TODO Auto-generated method stub
+            //replaces element at given index
+            //first check if index is valid
+            if (index < 0 || index > size) { //index outside of range
+                  System.out.println("boo! invalid index");
+                  return;
+            }
+            myArray[index] = a;
             
       }
       
