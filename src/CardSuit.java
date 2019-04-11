@@ -10,12 +10,11 @@ public enum CardSuit {
       
       private final Integer suitValue;
       
-      private CardSuit(int value) {
+      private CardSuit(int value) {  //sets suit value
             this.suitValue = value;
       }
       
-      public Integer getCardSuit() {
+      public Integer getCardSuit() {   //returns suit value
             return suitValue;
       }
-      
 }

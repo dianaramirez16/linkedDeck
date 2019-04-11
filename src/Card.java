@@ -2,20 +2,20 @@
 //reference: https://howtoprogramwithjava.com/enums/
 
 public class Card {
-      private CardSuit suit;
+      private CardSuit cardSuit;
       private CardValue cardValue;
       
-      protected Card (CardValue cardValue, CardSuit suit) {
+      protected Card (CardValue cardValue, CardSuit cardSuit) {
             this.cardValue = cardValue;
-            this.suit = suit;
+            this.cardSuit = cardSuit;
       }
       
-      public CardSuit getSuit() {
-            return suit;
+      public CardSuit getCardSuit() {
+            return cardSuit;
       }
       
-      public void setSuit(CardSuit suit) {
-            this.suit = suit;
+      public void setSuit(CardSuit cardSuit) {
+            this.cardSuit = cardSuit;
       }
       
       public CardValue getCardValue() {
@@ -26,12 +26,21 @@ public class Card {
             this.cardValue = cardValue;
       }
       
-      public int compareTo(Card o) {
-            return -this.getCardValue().compareTo(o.getCardValue());
+      
+      
+      
+      public Boolean equalsTo(Card p, Card o) {
+            if (p.getCardValue().equals(o.getCardValue())){  //cards are the same number
+                  if(p.cardSuit.getCardSuit() > (o.cardSuit.getCardSuit())) {  //compare cardSuits p>o
+                        return true;
+                  } else return false;  //o > p 
+            } else if (p.cardValue.getCardValue() > (o.cardValue.getCardValue())) { // p>o card number is greater
+                  return true;
+            } else return false;  //o > p
       }
       
       public String toString() {
-            return cardValue + " of " + suit /* + "(" + cardValue() + ")"*/;
+            return cardValue + " of " + cardSuit /* + "(" + cardValue() + ")"*/;
       }
       
       

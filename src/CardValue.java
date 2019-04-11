@@ -18,11 +18,11 @@ public enum CardValue {
       
       private final Integer cardValue;
       
-      private CardValue (final int value) {
+      private CardValue (final int value) {   //sets card value
             this.cardValue = value;
       }
       
-      public Integer getCardValue() {
+      public Integer getCardValue() {   //returns card value
             return cardValue;
       }
       
