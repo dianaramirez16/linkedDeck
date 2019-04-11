@@ -16,7 +16,7 @@ public class ArrayList <E> implements ArrayInterface<E> {
       
       
       //overhead constructor
-      public ArrayList(int capacity) {
+      public ArrayList(ArrayList<Card> capacity) {
             this.size=0;
             myArray = (E[]) new Object[this.capacity]; //creates array at default size
       }

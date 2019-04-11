@@ -9,7 +9,7 @@ public class Deck extends Card {
             for (final CardSuit cardSuit : CardSuit.values()) {
                   for (final CardValue cardValue : CardValue.values() ) {
                         Card tempCard = new Card(cardValue, cardSuit);
-                        Deck.protoDeck.add(tempCard);
+                        protoDeck.add(tempCard);
                   }
             }
       }
@@ -19,8 +19,9 @@ public class Deck extends Card {
       }
       
       public static ArrayList<Card> newDeck() {
-            final ArrayList<Card> cardArrayList = new ArrayList<>();
-            return cardArrayList;
+            /*final ArrayList<Card> cardArrayList = new ArrayList<>();
+            return cardArrayList;*/
+            return new ArrayList<Card>(Deck.protoDeck);
       }
       
 }

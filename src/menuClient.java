@@ -28,10 +28,15 @@ public class menuClient {
             q.enqueue(50);
       */
       //    System.out.println("Dequeued item is "+ q.dequeue().key);
-            ArrayList<Card> myDeck = new ArrayList<>();
-            System.out.println(myDeck.toString());
+            ArrayList<Card> myDeck = Deck.newDeck();
+            //myDeck.add(Card card);
+            for (Card c : myDeck) {
+                  System.out.println(c);
+            }
+            System.out.println("sys:" + myDeck.toString());
             
       }
 
+      
       
 }
