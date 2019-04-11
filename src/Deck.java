@@ -2,7 +2,7 @@
 //reference: https://gist.github.com/Rob-bie/b490814b4b7cbb070d58
 //reference: https://howtoprogramwithjava.com/enums/
 
-public class Deck {
+public class Deck extends Card {
       private static ArrayList<Card> protoDeck = new ArrayList<Card>();
       
       static {
@@ -15,11 +15,12 @@ public class Deck {
       }
       
       protected Deck(final CardValue cardValue, final CardSuit cardSuit) {
-            new Card(cardValue, cardSuit);
+            super(cardValue, cardSuit);
       }
       
       public static ArrayList<Card> newDeck() {
-            return new ArrayList<Card>(Deck.protoDeck);
+            final ArrayList<Card> cardArrayList = new ArrayList<>();
+            return cardArrayList;
       }
       
 }

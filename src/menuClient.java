@@ -28,19 +28,10 @@ public class menuClient {
             q.enqueue(50);
       */
       //    System.out.println("Dequeued item is "+ q.dequeue().key);
-            
-            //stack
-            Stack<Card> myDeck = new Stack<>(); // create default stack
-            
-           
+            ArrayList<Card> myDeck = new ArrayList<>();
+            System.out.println(myDeck.toString());
             
       }
 
-
-
-      public static Stack<Card> createDeck(){
-            Stack<Card> myDeck = new Stack<>();
-            return myDeck;
-      }
       
 }
