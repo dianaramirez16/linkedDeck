@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 public class menuClient {
       public static void main(String[] args) {
             singleLinkedList list = new singleLinkedList();
@@ -28,21 +29,18 @@ public class menuClient {
             q.enqueue(50);
       */
       //    System.out.println("Dequeued item is "+ q.dequeue().key);
-            ArrayList<Card> myDeck = Deck.newDeck();
-            //myDeck.add(Card card);
-          /*  for (Card c : myDeck) {
-                  System.out.println(c);
-            }*/
+            ArrayList<String> myDeck = new ArrayList<>();
             System.out.println("sys:" + myDeck.toString());
-            
+            createPlayers();
       }
       
       //method to generate players. each player gets a linked list "hand"
       public static void createPlayers() {
-            String[] deck = new deck[13];  //placeholder for player's hand. could be linked list
+            String[] deck = new String[13];  //placeholder for player's hand. could be linked list
             String playerName="Player";
             for (int i =0; i<4; i++){  //loops 4 times to create 4 players
-                  Players(setName(), deck[]);  //creates players
+                  //create players by calling Players method
+                  new Players("player"+i);
                   
                   System.out.println(Players.getName());  //prints players
             }
@@ -51,6 +49,10 @@ public class menuClient {
       //method to select random player to start
       //
       
+      public static String deckAdd(Card card) {
+            String s = "";
+            card =
+      }
       
       
       

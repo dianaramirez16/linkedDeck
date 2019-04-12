@@ -5,9 +5,9 @@ public class Players {
       public static int losses;
       public static Boolean isWinner=false;
       
-      public Players(String n, Deck[] h){
-            this.handOfCards =h;
-            this.name=n;
+      public Players(String n){
+            Deck[] handOfCards = new Deck[13];
+            name=n;
             int wins=0;
             int losses=0;
             isWinner=false;

@@ -14,14 +14,17 @@ public class Deck extends Card {
             }
       }
       
+      
       protected Deck(final CardValue cardValue, final CardSuit cardSuit) {
             super(cardValue, cardSuit);
       }
-      
+      /*
       public static ArrayList<Card> newDeck() {
-            /*final ArrayList<Card> cardArrayList = new ArrayList<>();
-            return cardArrayList;*/
-            return new ArrayList<Card>(Deck.protoDeck);
-      }
+            *//*final ArrayList<Card> cardArrayList = new ArrayList<>();
+            return cardArrayList;*//*
+            return new ArrayList<Card>();
+      }*/
+      
+      
       
 }

@@ -8,7 +8,7 @@ public class ArrayList <E> implements ArrayInterface<E> {
       
       //constructors
       //default constructor, creates an array list of size 5
-      public ArrayList(ArrayList<Card> protoDeck) {
+      public ArrayList() {
             this.capacity =52;
             this.size =0;  //initially there is no data
             myArray = (E[]) new Object[this.capacity]; //creates array at default size
