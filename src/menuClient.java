@@ -1,4 +1,6 @@
-//import java.util.ArrayList;
+// reference for shuffle method: https://www.vogella.com/tutorials/JavaAlgorithmsShuffle/article.html
+import java.util.Random;
+
 public class menuClient {
       
       public static void main(String[] args) {
@@ -39,16 +41,25 @@ public class menuClient {
       
       //method to generate players. each player gets a linked list "hand"
       public static void createPlayers() {
-            String[] deck = new String[13];  //placeholder for player's hand. could be linked list
             String playerName="Player";
-            for (int i =0; i<4; i++){  //loops 4 times to create 4 players
+            for (int i =1; i<5; i++){  //loops 4 times to create 4 players
                   //create players by calling Players method
                   new Players("player"+i);
                   
                   System.out.println(Players.getName());  //prints players
             }
-            
       }
+      
+      public static void shuffleList(ArrayList<Card> a) {
+            int n = a.size();
+            Random random = new Random();
+            random.nextInt();
+            for (int i = 0; i < n; i++) {
+                  int change = i + random.nextInt(n - i);
+                  swap(a, i, change);
+            }
+      }
+      
       //method to select random player to start
       //
       

@@ -145,7 +145,7 @@ public class ArrayList <E> implements ArrayInterface<E> {
       //create method to print arrayList
       //override for the toString method needed
       public String toString() {
-            System.out.println("AL: ");
+            //System.out.println("AL: ");
             String s = " ";
             
             for (int i =0; i<52; i++) { //concatenates and formats print out of data
