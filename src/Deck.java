@@ -20,7 +20,6 @@ public class Deck extends Card {
       }
       public static ArrayList<Card> newDeck() {
             System.out.println("protoPrint: " + protoDeck);
-            //final ArrayList<Card> cardArrayList = new ArrayList<>();
             return new ArrayList<Card>();
       }
       

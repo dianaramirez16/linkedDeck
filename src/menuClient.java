@@ -3,9 +3,11 @@ public class menuClient {
       
       public static void main(String[] args) {
             ArrayList<Card> d = Deck.newDeck();
+            
+            /*
             singleLinkedList list = new singleLinkedList();
             //linked list
-            /*System.out.println(list);
+            System.out.println(list);
             list.addFirst(101);
             System.out.println(list);
             list.addFirst(201);
@@ -18,11 +20,11 @@ public class menuClient {
             //System.out.println("the deleted data is: " + deleted.data);
             System.out.println(list);
             list.removeAfter(1);
-            System.out.println(list);*/
+            System.out.println(list);
             
             // queue
             Queue q = new Queue();
-           /* q.enqueue();
+            q.enqueue();
             q.enqueue(20);
             q.dequeue();
             q.dequeue();
@@ -31,8 +33,7 @@ public class menuClient {
             q.enqueue(50);
       */
       //    System.out.println("Dequeued item is "+ q.dequeue().key);
-            ArrayList<String> myDeck = new ArrayList<>();
-            System.out.println("sys:" + myDeck.toString());
+            //ArrayList<String> myDeck = new ArrayList<>();
             createPlayers();
       }
       

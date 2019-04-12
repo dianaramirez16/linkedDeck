@@ -147,8 +147,13 @@ public class ArrayList <E> implements ArrayInterface<E> {
       public String toString() {
             System.out.println("AL: ");
             String s = " ";
-            for (int i =0; i<size; i++) { //concatenates and formats print out of data
-                  s = s+myArray[i] + " | ";
+            
+            for (int i =0; i<52; i++) { //concatenates and formats print out of data
+                  if (i%4==0) {
+                        s = s+myArray[i] + "\n | ";
+
+                  } else s = s+myArray[i] + " | ";
+
             }
             return s;
       }
