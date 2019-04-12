@@ -60,9 +60,10 @@ public class Deck extends Card {
       */
       
       public static singleLinkedList dealCards(ArrayList<Card> aShuffled) {
+            singleLinkedList list = new singleLinkedList();
             for (int i =0; i<13; i++){ //iterates through index objects
                   //deals 13 cards to each linked list which is the hand of the player
-                  singleLinkedList list = new singleLinkedList();
+                  
                   list.addLast(aShuffled.get(i)); //accepts card object
                   
             }

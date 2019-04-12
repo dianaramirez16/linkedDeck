@@ -91,7 +91,7 @@
         <entry file="file://$PROJECT_DIR$/src/Deck.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="214">
-              <caret line="62" column="56" selection-start-line="62" selection-start-column="56" selection-end-line="62" selection-end-column="56" />
+              <caret line="62" column="59" selection-start-line="62" selection-start-column="59" selection-end-line="62" selection-end-column="59" />
               <folding>
                 <element signature="e#0#959#0" expanded="true" />
                 <element signature="e#261#267#0" expanded="true" />
@@ -168,8 +168,8 @@
         <option value="$PROJECT_DIR$/src/Card.java" />
         <option value="$PROJECT_DIR$/src/Players.java" />
         <option value="$PROJECT_DIR$/src/ArrayList.java" />
-        <option value="$PROJECT_DIR$/src/Deck.java" />
         <option value="$PROJECT_DIR$/src/menuClient.java" />
+        <option value="$PROJECT_DIR$/src/Deck.java" />
       </list>
     </option>
   </component>
@@ -461,7 +461,7 @@
     <entry file="file://$PROJECT_DIR$/src/Deck.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
-          <caret line="62" column="56" selection-start-line="62" selection-start-column="56" selection-end-line="62" selection-end-column="56" />
+          <caret line="62" column="59" selection-start-line="62" selection-start-column="59" selection-end-line="62" selection-end-column="59" />
           <folding>
             <element signature="e#0#959#0" expanded="true" />
             <element signature="e#261#267#0" expanded="true" />
