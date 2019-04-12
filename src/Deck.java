@@ -2,8 +2,6 @@
 //reference: https://gist.github.com/Rob-bie/b490814b4b7cbb070d58
 //reference: https://howtoprogramwithjava.com/enums/
 
-
-import java.util.LinkedList;
 import java.util.Random;
 public class Deck extends Card {
       private static ArrayList<Card> protoDeck = new ArrayList<Card>();
@@ -61,27 +59,13 @@ public class Deck extends Card {
       
       */
       
-      public static LinkedList<Card> dealCards(ArrayList<Card> a) {
-            for (int i =0; i<a.getSize(); i++){ //iterates through index objects
-                 /* singleLinkedList list = new singleLinkedList();
-                  //linked list
-                  System.out.println(list);
-                  list.addFirst(101);
-                  System.out.println(list);
-                  list.addFirst(201);
-                  System.out.println(list);
-                  list.addLast(333);
-                  System.out.println(list);
-                  list.addAfter(444, 10);
-                  System.out.println(list);
-                  //Node deleted = (Node)list.removeFirst();
-                  //System.out.println("the deleted data is: " + deleted.data);
-                  System.out.println(list);
-                  list.removeAfter(1);
-                  System.out.println(list);*/
+      public static singleLinkedList dealCards(ArrayList<Card> aShuffled) {
+            for (int i =0; i<13; i++){ //iterates through index objects
+                  //deals 13 cards to each linked list which is the hand of the player
                   singleLinkedList list = new singleLinkedList();
-                  list.addLast(a.get(i)); //accepts card object
+                  list.addLast(aShuffled.get(i)); //accepts card object
+                  
             }
-            return list ;
+            return list;
       }
 }
