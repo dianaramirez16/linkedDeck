@@ -2,6 +2,8 @@
 //reference: https://gist.github.com/Rob-bie/b490814b4b7cbb070d58
 //reference: https://howtoprogramwithjava.com/enums/
 
+
+import java.util.Random;
 public class Deck extends Card {
       private static ArrayList<Card> protoDeck = new ArrayList<Card>();
       
@@ -25,7 +27,7 @@ public class Deck extends Card {
       
       //shuffle method
       
-      public static void shuffleList(List<Integer> a) {
+      public static void shuffleList(ArrayList<Card> a) {
             int n = a.size();
             Random random = new Random();
             random.nextInt();
@@ -41,7 +43,7 @@ public class Deck extends Card {
             a.set(change, helper);
       }
       
-      public static void main(String[] args) {
+ /*     public static void main(String[] args) {
             List<Integer> list = new ArrayList<Integer>();
             list.add(1);
             list.add(2);
@@ -55,7 +57,7 @@ public class Deck extends Card {
                   System.out.println(i);
             }
       
-      
+      */
       
       
 }

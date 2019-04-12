@@ -1,6 +1,6 @@
 public class ArrayList <E> implements ArrayInterface<E> {
       
-      private int size; //how many elements in the AL
+      public int size; //how many elements in the AL
       private int capacity; //how big is the AL
       private E[] myArray; //this does not create the array,
       //that comes in the constructor later.
