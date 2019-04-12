@@ -3,7 +3,7 @@
 //reference: https://howtoprogramwithjava.com/enums/
 
 public class Deck extends Card {
-      private static ArrayList<Card> protoDeck = new ArrayList<Card>(52);
+      private static ArrayList<Card> protoDeck = new ArrayList<Card>();
       
       static {
             for (final CardSuit cardSuit : CardSuit.values()) {
@@ -18,13 +18,11 @@ public class Deck extends Card {
       protected Deck(final CardValue cardValue, final CardSuit cardSuit) {
             super(cardValue, cardSuit);
       }
-      /*
       public static ArrayList<Card> newDeck() {
-            *//*final ArrayList<Card> cardArrayList = new ArrayList<>();
-            return cardArrayList;*//*
+            System.out.println("protoPrint: " + protoDeck);
+            //final ArrayList<Card> cardArrayList = new ArrayList<>();
             return new ArrayList<Card>();
-      }*/
-      
+      }
       
       
 }

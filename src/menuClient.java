@@ -1,6 +1,8 @@
-import java.util.ArrayList;
+//import java.util.ArrayList;
 public class menuClient {
+      
       public static void main(String[] args) {
+            ArrayList<Card> d = Deck.newDeck();
             singleLinkedList list = new singleLinkedList();
             //linked list
             /*System.out.println(list);
@@ -49,11 +51,11 @@ public class menuClient {
       //method to select random player to start
       //
       
-      public static String deckAdd(Card card) {
+    /*  public static String deckAdd(Card addCard) {
             String s = "";
-            card =
+            
       }
       
-      
+      */
       
 }
