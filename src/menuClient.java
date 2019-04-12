@@ -36,7 +36,11 @@ public class menuClient {
       }
       
       //method to select random player to start
+      //method to display player's hands
+            //print linked lists
+      //create queue as table where cards are shown
+      //method to print after each round, the cards in every player's hands
+      //method to play for 15 rounds or a player has all cards, check for a tie
       //
-      
     
 }

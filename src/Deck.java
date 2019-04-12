@@ -60,12 +60,13 @@ public class Deck extends Card {
       */
       
       public static singleLinkedList dealCards(ArrayList<Card> aShuffled) {
-            singleLinkedList list = new singleLinkedList();
+            singleLinkedList list = new singleLinkedList();   //change to QUEUE or use only QUEUE methods
             for (int i =0; i<13; i++){ //iterates through index objects
                   //deals 13 cards to each linked list which is the hand of the player
                   
                   list.addLast(aShuffled.get(i)); //accepts card object
-                  
+                  //as the cards are added to the linked list,
+                  //they are given the name of the player in order to determine their source in gameplay
             }
             return list;
       }
