@@ -3,6 +3,7 @@
 //reference: https://howtoprogramwithjava.com/enums/
 
 
+import java.util.LinkedList;
 import java.util.Random;
 public class Deck extends Card {
       private static ArrayList<Card> protoDeck = new ArrayList<Card>();
@@ -16,16 +17,16 @@ public class Deck extends Card {
             }
       }
       
-      
       protected Deck(final CardValue cardValue, final CardSuit cardSuit) {
             super(cardValue, cardSuit);
       }
+      
       public static ArrayList<Card> newDeck() {
             System.out.println("protoPrint: " + protoDeck);
             return new ArrayList<Card>();
       }
       
-      //shuffle method
+     /* //shuffle methods
       
       public static void shuffleList(ArrayList<Card> a) {
             int n = a.getSize();
@@ -44,7 +45,7 @@ public class Deck extends Card {
             a.set(change, a.get(helper));
       }
       
- /*     public static void main(String[] args) {
+      public static void main(String[] args) {
             List<Integer> list = new ArrayList<Integer>();
             list.add(1);
             list.add(2);
@@ -60,5 +61,27 @@ public class Deck extends Card {
       
       */
       
-      
+      public static LinkedList<Card> dealCards(ArrayList<Card> a) {
+            for (int i =0; i<a.getSize(); i++){ //iterates through index objects
+                 /* singleLinkedList list = new singleLinkedList();
+                  //linked list
+                  System.out.println(list);
+                  list.addFirst(101);
+                  System.out.println(list);
+                  list.addFirst(201);
+                  System.out.println(list);
+                  list.addLast(333);
+                  System.out.println(list);
+                  list.addAfter(444, 10);
+                  System.out.println(list);
+                  //Node deleted = (Node)list.removeFirst();
+                  //System.out.println("the deleted data is: " + deleted.data);
+                  System.out.println(list);
+                  list.removeAfter(1);
+                  System.out.println(list);*/
+                  singleLinkedList list = new singleLinkedList();
+                  list.addLast(a.get(i)); //accepts card object
+            }
+            return list ;
+      }
 }
