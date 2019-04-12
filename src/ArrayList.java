@@ -105,9 +105,8 @@ public class ArrayList <E> implements ArrayInterface<E> {
                   return null;  //programs expects return, so just enter null
             }
             /// --- end copy----
-            return myArray[index];
+            return myArray[index];   //returns array object type
       }
-      
       
       
       public void set(int index, E a) {

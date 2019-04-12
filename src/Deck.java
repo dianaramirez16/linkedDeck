@@ -28,7 +28,7 @@ public class Deck extends Card {
       //shuffle method
       
       public static void shuffleList(ArrayList<Card> a) {
-            int n = a.size();
+            int n = a.getSize();
             Random random = new Random();
             random.nextInt();
             for (int i = 0; i < n; i++) {
@@ -37,10 +37,11 @@ public class Deck extends Card {
             }
       }
       
-      private static void swap(List<Integer> a, int i, int change) {
-            int helper = a.get(i);
+      private static void swap(ArrayList<Card> a, int i, int change) {
+            //  int helper = a.get(i);
+            int helper = a.get(i);  // needs to return int
             a.set(i, a.get(change));
-            a.set(change, helper);
+            a.set(change, a.get(helper));
       }
       
  /*     public static void main(String[] args) {
