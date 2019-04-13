@@ -3,7 +3,7 @@
 
 public class Queue {
       private QNode front, rear;   //QUEUE POINTERS
-      private int size;    //# of nodes
+      private int size=0;    //# of nodes
       
       // front, rear, & size are methods of a queue. first in first out
       
@@ -43,7 +43,7 @@ public class Queue {
       
       
       public QNode peek() { //returns element at front
-            if (size==0) {
+            if (size<0) {
                   System.out.println("queue does not contain anything yet!");
             }
             return this.front;
