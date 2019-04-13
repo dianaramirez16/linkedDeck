@@ -96,13 +96,6 @@ public class menuClient {
             tableQueue.enQueue(firstCard4);
             player4.deQueue();
             
-            randomPlayer++; //random player incremented
-            
-            /*
-            QNode tempNode = playersArray[randomPlayer].peek();   //first qnode in rand players deck
-            Card cardPlayed = tempNode.getCard();
-            tableQueue.enQueue(cardPlayed);*/
-            
             System.out.println("\ntable: " + tableQueue + "\n");
       
             QNode tempNode5 = player1.peek();   //prints first variable
@@ -114,18 +107,56 @@ public class menuClient {
             Card secondCard3 = tempNode7.getCard();
             Card secondCard4 = tempNode8.getCard();
       
-            System.out.println("Winner: ");
+            Card winningCard1 = findWinner(firstCard1,firstCard2,firstCard3,firstCard4);
+            System.out.println("Winner: " + winningCard1 );
             
-            
-            
-            
-            System.out.println("Round 2: \n");
+            if (winningCard1==firstCard1){
+                  player1.enQueue(firstCard1); player1.enQueue(firstCard2); player1.enQueue(firstCard3); player1.enQueue(firstCard4);
+            } else if (winningCard1==firstCard2) {
+                  player2.enQueue(firstCard1); player2.enQueue(firstCard2); player2.enQueue(firstCard3); player2.enQueue(firstCard4);
+            } else if (winningCard1==firstCard3) {
+                  player3.enQueue(firstCard1); player3.enQueue(firstCard2); player3.enQueue(firstCard3); player3.enQueue(firstCard4);
+            } else {
+                  player4.enQueue(firstCard1); player4.enQueue(firstCard2); player4.enQueue(firstCard3); player4.enQueue(firstCard4);
+            }
+            tableQueue.deQueue();tableQueue.deQueue();tableQueue.deQueue();tableQueue.deQueue();
+
+            System.out.println("\nRound 2: \n");
             System.out.println("Player1's hand:  " + secondCard1 + player1.toString()); //prints hands
             System.out.println("Player2's hand:  " + secondCard2 + player2.toString());
             System.out.println("Player3's hand:  " + secondCard3 + player3.toString());
             System.out.println("Player4's hand:  " + secondCard4 + player4.toString());
+            
+            tableQueue.enQueue(secondCard1); tableQueue.enQueue(secondCard2); tableQueue.enQueue(secondCard3); tableQueue.enQueue(secondCard4);
+            player1.deQueue();player2.deQueue();player3.deQueue();player4.deQueue();
+            System.out.println("\ntable: " + tableQueue + "\n");
       
+            QNode tempNode9 = player1.peek();   //prints first variable
+            QNode tempNode10 = player2.peek();
+            QNode tempNode11 = player3.peek();
+            QNode tempNode12 = player4.peek();
+            Card thirdCard1 = tempNode9.getCard();
+            Card thirdCard2 = tempNode10.getCard();
+            Card thirdCard3 = tempNode11.getCard();
+            Card thirdCard4 = tempNode12.getCard();
       
+            Card winningCard2 = findWinner(thirdCard1,thirdCard2,thirdCard3,thirdCard4);
+            System.out.println("Winner: " + winningCard2 );
+      
+            if (winningCard1==secondCard1){
+                  player1.enQueue(secondCard1); player1.enQueue(secondCard2); player1.enQueue(secondCard3); player1.enQueue(secondCard4);
+            } else if (winningCard1==secondCard2) {
+                  player2.enQueue(secondCard1); player2.enQueue(secondCard2); player2.enQueue(secondCard3); player2.enQueue(secondCard4);
+            } else if (winningCard1==secondCard3) {
+                  player3.enQueue(secondCard1); player3.enQueue(secondCard2); player3.enQueue(secondCard3); player3.enQueue(secondCard4);
+            } else {
+                  player4.enQueue(secondCard1); player4.enQueue(secondCard2); player4.enQueue(secondCard3); player4.enQueue(secondCard4);
+            }
+            tableQueue.deQueue();tableQueue.deQueue();tableQueue.deQueue();tableQueue.deQueue();
+      
+            
+            
+            
       }
 
       public static Card findWinner(Card card1, Card card2, Card card3, Card card4) {
