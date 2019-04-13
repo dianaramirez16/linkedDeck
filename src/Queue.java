@@ -53,13 +53,11 @@ public class Queue {
       public String toString() {
             String value = "";
             QNode temp = front; //iterator to go over the nodes starting at the head
-            
             if(temp == null)
             {
                   value += " | " + temp;
                   
             }
-            
             while(temp.next !=null) { //while there is still a next
                   value += " | " + temp.next.card;  //get node data
                   temp = temp.next;				// move to next node

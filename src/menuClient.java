@@ -9,9 +9,7 @@ public class menuClient {
             Deck.shuffleList(d); //shuffles & prints shuffled
             createPlayers();
       
-            for (int i=0; i<4; i++){
-                  String s = "Player "+ i + " : " +  (playersArray[i].getName());
-            }
+           
             
             
             dealCards(d);
@@ -33,11 +31,14 @@ public class menuClient {
             System.out.println(playersArray[3].getName());
             */
             playersArray = new Players[] {player1, player2, player3, player4};
-            
+            /*for (int i=0; i<4; i++){
+                  String s = "Inside createPlayers "+ i + " : " +  "- hand:" + playersArray[i].playerHand;
+                  System.out.println(s);
+            }*/
       }
       
       public static void dealCards(ArrayList<Card> d) {
-            for(int i=0; i<4; i++){
+          /*  for(int i=0; i<4; i++){
                   
                   Queue tempQ = new Queue();
                   Players tempPlayer = playersArray[i];
@@ -53,28 +54,40 @@ public class menuClient {
                   tempQ.enQueue(nullCard);
                   //fills first nodes in queues with null values
                   System.out.println("null hands: " + playersArray[i%4].playerHand + i + playersArray[i].getName());
-            }
+            }*/
             
             for (int i =0; i<d.getSize(); i++){ //iterates through index objects
-                  Queue tempQ = new Queue();
+                  Queue tempQ;
                   Card referenceAdd = d.get(i);
                   //System.out.print(referenceAdd);
+                  if (i%4==0){
+                        playersArray[0].playerHand.enQueue(referenceAdd);
+                  } else if (i%4==1){
+                        playersArray[1].playerHand.enQueue(referenceAdd);
+                  }else if (i%4==2) {
+                        playersArray[2].playerHand.enQueue(referenceAdd);
+                  } else if (i%4==3) {
+                        playersArray[3].playerHand.enQueue(referenceAdd);
+                  }
                   
-                  Players tempPlayer = playersArray[i%4];  //0,1,2,3,0,1,2,3
-                  tempQ = tempPlayer.playerHand;
-                  tempQ.enQueue(referenceAdd);
-                  
-                  int counter = (i%4);
-                  System.out.println("i:" + i + "counter:" + counter);
-                  System.out.println("var" + playersArray[counter].getName());  //grabs only l4
-                  referenceAdd.setCardPlayerName(playersArray[counter].getName());
-                  String pName = referenceAdd.getCardPlayerName();
-                  
-                  System.out.println("name:" + pName + "- hand:" + playersArray[i%4].playerHand );
-                  
-                  
-                  //they are given the name of the player in order to determine their source in gameplay
+            /*
+            Players tempPlayer = playersArray[i%4];  //0,1,2,3,0,1,2,3
+            tempQ = tempPlayer.playerHand;
+            tempQ.enQueue(referenceAdd);
+      
+            int counter = (i%4);
+            //System.out.println("i: " + i + " counter:" + counter);
+            //System.out.println("var: " + playersArray[counter].getName());  //grabs only l4
+            referenceAdd.setCardPlayerName(playersArray[counter].getName());
+            String pName = referenceAdd.getCardPlayerName();*/
+            //System.out.println("name:" + playersArray + "- hand:" + playersArray[i%4].playerHand );
+      }
+            //System.out.println("name:" + playersArray + );
+            for (int i=0; i<4; i++){
+                  String s = "Player "+ i + " : " +  "- hand:" + playersArray[i].playerHand;
+                  System.out.println(s);
             }
+            
       }
       
       public static void startGame(){
