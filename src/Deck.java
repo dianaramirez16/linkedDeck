@@ -19,12 +19,12 @@ public class Deck extends Card {
             super(cardValue, cardSuit);
       }
       
-      public static ArrayList<Card> newDeck() {
-            System.out.println("protoPrint: " + protoDeck);
-            return new ArrayList<Card>();
+      public static ArrayList<Card> newDeck() { //
+            //System.out.println("protoPrint: " + protoDeck);   //prints tostring from arraylist class
+            return protoDeck;
       }
       
-     /* //shuffle methods
+      //shuffle methods
       
       public static void shuffleList(ArrayList<Card> a) {
             int n = a.getSize();
@@ -34,40 +34,16 @@ public class Deck extends Card {
                   int change = i + random.nextInt(n - i);
                   swap(a, i, change);
             }
+            System.out.println("shuffled: " + protoDeck);
       }
       
       private static void swap(ArrayList<Card> a, int i, int change) {
             //  int helper = a.get(i);
-            int helper = a.get(i);  // needs to return int
+            Card helper = a.get(i);  // needs to return int
             a.set(i, a.get(change));
-            a.set(change, a.get(helper));
+            a.set(change,(helper));   //set accepts index, card
       }
       
-      public static void main(String[] args) {
-            List<Integer> list = new ArrayList<Integer>();
-            list.add(1);
-            list.add(2);
-            list.add(3);
-            list.add(4);
-            list.add(5);
-            list.add(6);
-            list.add(7);
-            shuffleList(list);
-            for (int i : list) {
-                  System.out.println(i);
-            }
       
-      */
       
-      public static singleLinkedList dealCards(ArrayList<Card> aShuffled) {
-            singleLinkedList list = new singleLinkedList();   //change to QUEUE or use only QUEUE methods
-            for (int i =0; i<13; i++){ //iterates through index objects
-                  //deals 13 cards to each linked list which is the hand of the player
-                  
-                  list.addLast(aShuffled.get(i)); //accepts card object
-                  //as the cards are added to the linked list,
-                  //they are given the name of the player in order to determine their source in gameplay
-            }
-            return list;
-      }
 }
