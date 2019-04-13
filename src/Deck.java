@@ -34,7 +34,7 @@ public class Deck extends Card {
                   int change = i + random.nextInt(n - i);
                   swap(a, i, change);
             }
-            System.out.println("shuffled: " + protoDeck);
+            System.out.println("shuffled: " + protoDeck + "\n");
       }
       
       private static void swap(ArrayList<Card> a, int i, int change) {

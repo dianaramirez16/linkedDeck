@@ -1,5 +1,4 @@
 public class Players {
-      public static Queue playerHand;
       public static String name ="";
       public static int wins=0;
       public static int losses=0;
@@ -12,7 +11,6 @@ public class Players {
       
       //overhead constructor
       public Players(String n){
-            playerHand = new Queue();   //change to QUEUE or use only QUEUE methods
             this.name=n;
             wins=0;
             losses=0;
