@@ -1,4 +1,6 @@
 //single linked list implementation
+// DIANA RAMIREZ
+// PROJECT 3 DATA STRUCTURES
 
 public class singleLinkedList {
       private Node head;   //head of linked list

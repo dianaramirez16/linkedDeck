@@ -1,3 +1,6 @@
+// DIANA RAMIREZ
+// PROJECT 3 DATA STRUCTURES
+
 //this is the node for the single linked list
 public class Node {
       //data

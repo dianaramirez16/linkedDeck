@@ -1,3 +1,6 @@
+// DIANA RAMIREZ
+// PROJECT 3 DATA STRUCTURES
+
 // reference for shuffle method: https://www.vogella.com/tutorials/JavaAlgorithmsShuffle/article.html
 import java.util.Random;
 
@@ -27,7 +30,7 @@ public class menuClient {
                   //nullCard.setCardPlayerName(playersArray[i].getName());
                   String pName = nullCard.getCardPlayerName();
                   
-                  tempQ.enQueue(nullCard);
+                  tempQ.addQueue(nullCard);
                   //fills first nodes in queues with null values
                   //System.out.println("null hands: " + playersArray[i%4] + i + playersArray[i]);
             }
@@ -43,13 +46,13 @@ public class menuClient {
             playersArray = new Queue[]{player1, player2, player3, player4};
       
             //System.out.println("Player1's hand: " + d.get(0) + " | " + d.get(1) + " | " + d.get(2) + " | " + d.get(3) + "\n\t |" + d.get(4) + " | " + d.get(5) + " | " + d.get(6) + " | " + d.get(7) + "\n\t | " + d.get(8) + " | " + d.get(9) + " | " + d.get(10) + " | " + d.get(11) + " | " + d.get(12));
-            player1.enQueue(d.get(0)); player1.enQueue(d.get(1)); player1.enQueue(d.get(2)); player1.enQueue(d.get(3));player1.enQueue(d.get(4)); player1.enQueue(d.get(5)); player1.enQueue(d.get(6)); player1.enQueue(d.get(7));player1.enQueue(d.get(8)); player1.enQueue(d.get(9)); player1.enQueue(d.get(10)); player1.enQueue(d.get(11));player1.enQueue(d.get(12));
+            player1.addQueue(d.get(0)); player1.addQueue(d.get(1)); player1.addQueue(d.get(2)); player1.addQueue(d.get(3));player1.addQueue(d.get(4)); player1.addQueue(d.get(5)); player1.addQueue(d.get(6)); player1.addQueue(d.get(7));player1.addQueue(d.get(8)); player1.addQueue(d.get(9)); player1.addQueue(d.get(10)); player1.addQueue(d.get(11));player1.addQueue(d.get(12));
             //player 2
-            player2.enQueue(d.get(13)); player2.enQueue(d.get(14)); player2.enQueue(d.get(15));player2.enQueue(d.get(16));player2.enQueue(d.get(17));player2.enQueue(d.get(18));player2.enQueue(d.get(19));player2.enQueue(d.get(20));player2.enQueue(d.get(21));player2.enQueue(d.get(22));player2.enQueue(d.get(23));player2.enQueue(d.get(24));player2.enQueue(d.get(25));
+            player2.addQueue(d.get(13)); player2.addQueue(d.get(14)); player2.addQueue(d.get(15));player2.addQueue(d.get(16));player2.addQueue(d.get(17));player2.addQueue(d.get(18));player2.addQueue(d.get(19));player2.addQueue(d.get(20));player2.addQueue(d.get(21));player2.addQueue(d.get(22));player2.addQueue(d.get(23));player2.addQueue(d.get(24));player2.addQueue(d.get(25));
             //player3
-            player3.enQueue(d.get(26));player3.enQueue(d.get(27));player3.enQueue(d.get(28));player3.enQueue(d.get(29));player3.enQueue(d.get(30));player3.enQueue(d.get(31));player3.enQueue(d.get(32));player3.enQueue(d.get(33));player3.enQueue(d.get(34));player3.enQueue(d.get(35));player3.enQueue(d.get(36));player3.enQueue(d.get(37));player3.enQueue(d.get(38));
+            player3.addQueue(d.get(26));player3.addQueue(d.get(27));player3.addQueue(d.get(28));player3.addQueue(d.get(29));player3.addQueue(d.get(30));player3.addQueue(d.get(31));player3.addQueue(d.get(32));player3.addQueue(d.get(33));player3.addQueue(d.get(34));player3.addQueue(d.get(35));player3.addQueue(d.get(36));player3.addQueue(d.get(37));player3.addQueue(d.get(38));
             //player4
-            player4.enQueue(d.get(39));player4.enQueue(d.get(40));player4.enQueue(d.get(41));player4.enQueue(d.get(42));player4.enQueue(d.get(43));player4.enQueue(d.get(44));player4.enQueue(d.get(45));player4.enQueue(d.get(46));player4.enQueue(d.get(47));player4.enQueue(d.get(48));player4.enQueue(d.get(49));player4.enQueue(d.get(50));player4.enQueue(d.get(51));
+            player4.addQueue(d.get(39));player4.addQueue(d.get(40));player4.addQueue(d.get(41));player4.addQueue(d.get(42));player4.addQueue(d.get(43));player4.addQueue(d.get(44));player4.addQueue(d.get(45));player4.addQueue(d.get(46));player4.addQueue(d.get(47));player4.addQueue(d.get(48));player4.addQueue(d.get(49));player4.addQueue(d.get(50));player4.addQueue(d.get(51));
       
       }
       
@@ -57,7 +60,7 @@ public class menuClient {
       public static void startGame(){
             Queue tableQueue = new Queue();
             Card nullCard = new Card();
-            tableQueue.enQueue(nullCard);
+            tableQueue.addQueue(nullCard);
       
             System.out.println("\n\n\n");
             System.out.println("Let's play a game.");
@@ -83,16 +86,16 @@ public class menuClient {
             System.out.println("Player4's hand:  " + firstCard4 + player4.toString());
             
             //player 1 plays
-            tableQueue.enQueue(firstCard1); player1.deQueue();
+            tableQueue.addQueue(firstCard1); player1.deQueue();
             
             //player 2 plays
-            tableQueue.enQueue(firstCard2); player2.deQueue();
+            tableQueue.addQueue(firstCard2); player2.deQueue();
             
             //player 3 plays
-            tableQueue.enQueue(firstCard3); player3.deQueue();
+            tableQueue.addQueue(firstCard3); player3.deQueue();
             
             //player 4 plays:
-            tableQueue.enQueue(firstCard4); player4.deQueue();
+            tableQueue.addQueue(firstCard4); player4.deQueue();
             
             System.out.println("\ntable 1: " + tableQueue + "\n");
       
@@ -109,13 +112,13 @@ public class menuClient {
             System.out.println("Winner: " + winningCard1 );
             
             if (winningCard1==firstCard1){
-                  player1.enQueue(firstCard1); player1.enQueue(firstCard2); player1.enQueue(firstCard3); player1.enQueue(firstCard4);
+                  player1.addQueue(firstCard1); player1.addQueue(firstCard2); player1.addQueue(firstCard3); player1.addQueue(firstCard4);
             } else if (winningCard1==firstCard2) {
-                  player2.enQueue(firstCard1); player2.enQueue(firstCard2); player2.enQueue(firstCard3); player2.enQueue(firstCard4);
+                  player2.addQueue(firstCard1); player2.addQueue(firstCard2); player2.addQueue(firstCard3); player2.addQueue(firstCard4);
             } else if (winningCard1==firstCard3) {
-                  player3.enQueue(firstCard1); player3.enQueue(firstCard2); player3.enQueue(firstCard3); player3.enQueue(firstCard4);
+                  player3.addQueue(firstCard1); player3.addQueue(firstCard2); player3.addQueue(firstCard3); player3.addQueue(firstCard4);
             } else {
-                  player4.enQueue(firstCard1); player4.enQueue(firstCard2); player4.enQueue(firstCard3); player4.enQueue(firstCard4);
+                  player4.addQueue(firstCard1); player4.addQueue(firstCard2); player4.addQueue(firstCard3); player4.addQueue(firstCard4);
             }
             tableQueue.deQueue();tableQueue.deQueue();tableQueue.deQueue();tableQueue.deQueue();
             player1.deQueue(); player2.deQueue(); player3.deQueue(); player4.deQueue();
@@ -129,7 +132,7 @@ public class menuClient {
             System.out.println("Player3's hand:  " + secondCard3 + player3.toString());
             System.out.println("Player4's hand:  " + secondCard4 + player4.toString());
             
-            tableQueue.enQueue(secondCard1); tableQueue.enQueue(secondCard2); tableQueue.enQueue(secondCard3); tableQueue.enQueue(secondCard4);
+            tableQueue.addQueue(secondCard1); tableQueue.addQueue(secondCard2); tableQueue.addQueue(secondCard3); tableQueue.addQueue(secondCard4);
             player1.deQueue();player2.deQueue();player3.deQueue();player4.deQueue();
             System.out.println("\ntable 2: " + tableQueue + "\n");
       
@@ -146,13 +149,13 @@ public class menuClient {
             System.out.println("Winner: " + winningCard2 );
       
             if (winningCard2==secondCard1){
-                  player1.enQueue(secondCard1); player1.enQueue(secondCard2); player1.enQueue(secondCard3); player1.enQueue(secondCard4);
+                  player1.addQueue(secondCard1); player1.addQueue(secondCard2); player1.addQueue(secondCard3); player1.addQueue(secondCard4);
             } else if (winningCard2==secondCard2) {
-                  player2.enQueue(secondCard1); player2.enQueue(secondCard2); player2.enQueue(secondCard3); player2.enQueue(secondCard4);
+                  player2.addQueue(secondCard1); player2.addQueue(secondCard2); player2.addQueue(secondCard3); player2.addQueue(secondCard4);
             } else if (winningCard2==secondCard3) {
-                  player3.enQueue(secondCard1); player3.enQueue(secondCard2); player3.enQueue(secondCard3); player3.enQueue(secondCard4);
+                  player3.addQueue(secondCard1); player3.addQueue(secondCard2); player3.addQueue(secondCard3); player3.addQueue(secondCard4);
             } else {
-                  player4.enQueue(secondCard1); player4.enQueue(secondCard2); player4.enQueue(secondCard3); player4.enQueue(secondCard4);
+                  player4.addQueue(secondCard1); player4.addQueue(secondCard2); player4.addQueue(secondCard3); player4.addQueue(secondCard4);
             }
             tableQueue.deQueue();tableQueue.deQueue();tableQueue.deQueue();tableQueue.deQueue();
             
@@ -164,7 +167,7 @@ public class menuClient {
             System.out.println("Player3's hand:  " + thirdCard3 + player3.toString());
             System.out.println("Player4's hand:  " + thirdCard4 + player4.toString());
       
-            tableQueue.enQueue(thirdCard1); tableQueue.enQueue(thirdCard2); tableQueue.enQueue(thirdCard3); tableQueue.enQueue(thirdCard4);
+            tableQueue.addQueue(thirdCard1); tableQueue.addQueue(thirdCard2); tableQueue.addQueue(thirdCard3); tableQueue.addQueue(thirdCard4);
             player1.deQueue();player2.deQueue();player3.deQueue();player4.deQueue();
             System.out.println("\ntable 3 : " + tableQueue + "\n");
       
@@ -181,13 +184,13 @@ public class menuClient {
             System.out.println("Winner: " + winningCard3 );
       
             if (winningCard3==fourthCard1){
-                  player1.enQueue(fourthCard1); player1.enQueue(fourthCard2); player1.enQueue(fourthCard3); player1.enQueue(fourthCard4);
+                  player1.addQueue(fourthCard1); player1.addQueue(fourthCard2); player1.addQueue(fourthCard3); player1.addQueue(fourthCard4);
             } else if (winningCard3==fourthCard2) {
-                  player2.enQueue(fourthCard1); player2.enQueue(fourthCard2); player2.enQueue(fourthCard3); player2.enQueue(fourthCard4);
+                  player2.addQueue(fourthCard1); player2.addQueue(fourthCard2); player2.addQueue(fourthCard3); player2.addQueue(fourthCard4);
             } else if (winningCard3==fourthCard3) {
-                  player3.enQueue(fourthCard1); player3.enQueue(fourthCard2); player3.enQueue(fourthCard3); player3.enQueue(fourthCard4);
+                  player3.addQueue(fourthCard1); player3.addQueue(fourthCard2); player3.addQueue(fourthCard3); player3.addQueue(fourthCard4);
             } else {
-                  player4.enQueue(fourthCard1); player4.enQueue(fourthCard2); player4.enQueue(fourthCard3); player4.enQueue(secondCard4);
+                  player4.addQueue(fourthCard1); player4.addQueue(fourthCard2); player4.addQueue(fourthCard3); player4.addQueue(fourthCard4);
             }
             tableQueue.deQueue();tableQueue.deQueue();tableQueue.deQueue();tableQueue.deQueue();
       
@@ -199,7 +202,7 @@ public class menuClient {
             System.out.println("Player3's hand:  " + fourthCard3 + player3.toString());
             System.out.println("Player4's hand:  " + fourthCard4 + player4.toString());
       
-            tableQueue.enQueue(fourthCard1); tableQueue.enQueue(fourthCard2); tableQueue.enQueue(fourthCard3); tableQueue.enQueue(fourthCard4);
+            tableQueue.addQueue(fourthCard1); tableQueue.addQueue(fourthCard2); tableQueue.addQueue(fourthCard3); tableQueue.addQueue(fourthCard4);
             player1.deQueue();player2.deQueue();player3.deQueue();player4.deQueue();
             System.out.println("\ntable 3 : " + tableQueue + "\n");
       
@@ -216,15 +219,52 @@ public class menuClient {
             System.out.println("Winner: " + winningCard4 );
       
             if (winningCard4==fourthCard1){
-                  player1.enQueue(fourthCard1); player1.enQueue(fourthCard2); player1.enQueue(fourthCard3); player1.enQueue(fourthCard4);
+                  player1.addQueue(fourthCard5); player1.addQueue(fourthCard6); player1.addQueue(fourthCard7); player1.addQueue(fourthCard8);
             } else if (winningCard4==fourthCard2) {
-                  player2.enQueue(fourthCard1); player2.enQueue(fourthCard2); player2.enQueue(fourthCard3); player2.enQueue(fourthCard4);
+                  player2.addQueue(fourthCard5); player2.addQueue(fourthCard6); player2.addQueue(fourthCard7); player2.addQueue(fourthCard8);
             } else if (winningCard4==fourthCard3) {
-                  player3.enQueue(fourthCard1); player3.enQueue(fourthCard2); player3.enQueue(fourthCard3); player3.enQueue(fourthCard4);
+                  player3.addQueue(fourthCard5); player3.addQueue(fourthCard6); player3.addQueue(fourthCard7); player3.addQueue(fourthCard8);
             } else {
-                  player4.enQueue(fourthCard1); player4.enQueue(fourthCard2); player4.enQueue(fourthCard3); player4.enQueue(secondCard4);
+                  player4.addQueue(fourthCard5); player4.addQueue(fourthCard6); player4.addQueue(fourthCard8); player4.addQueue(fourthCard8);
             }
             tableQueue.deQueue();tableQueue.deQueue();tableQueue.deQueue();tableQueue.deQueue();
+      
+      // ---------------------------------------------------
+      
+            System.out.println("\n-----Round 5: \n");
+            System.out.println("Player1's hand:  " + fourthCard1 + player1.toString()); //prints hands
+            System.out.println("Player2's hand:  " + fourthCard2 + player2.toString());
+            System.out.println("Player3's hand:  " + fourthCard3 + player3.toString());
+            System.out.println("Player4's hand:  " + fourthCard4 + player4.toString());
+      
+            tableQueue.addQueue(fourthCard1); tableQueue.addQueue(fourthCard2); tableQueue.addQueue(fourthCard3); tableQueue.addQueue(fourthCard4);
+            player1.deQueue();player2.deQueue();player3.deQueue();player4.deQueue();
+            System.out.println("\ntable 3 : " + tableQueue + "\n");
+      
+            QNode fourthNode1 = player1.peek();   //prints first variable
+            QNode fourthNode2 = player2.peek();
+            QNode fourthNode3 = player3.peek();
+            QNode fourthNode4 = player4.peek();
+            Card fourth5 = fourthNode1.getCard();
+            Card fourth6 = fourthNode2.getCard();
+            Card fourth7 = fourthNode3.getCard();
+            Card fourth8 = fourthNode4.getCard();
+      
+            Card winningCard5 = findWinner(fourth5,fourth6,fourth7,fourth8);
+            System.out.println("Winner: " + winningCard5 );
+      
+            if (winningCard5==fourth5){
+                  player1.addQueue(fourth5); player1.addQueue(fourth6); player1.addQueue(fourth7); player1.addQueue(fourth8);
+            } else if (winningCard5==fourth6) {
+                  player2.addQueue(fourth5); player2.addQueue(fourth6); player2.addQueue(fourth7); player2.addQueue(fourth8);
+            } else if (winningCard5==fourth7) {
+                  player3.addQueue(fourth5); player3.addQueue(fourth6); player3.addQueue(fourth7); player3.addQueue(fourth8);
+            } else {
+                  player4.addQueue(fourth5); player4.addQueue(fourth6); player4.addQueue(fourth8); player4.addQueue(fourth8);
+            }
+            tableQueue.deQueue();tableQueue.deQueue();tableQueue.deQueue();tableQueue.deQueue();
+      
+      
       
       
       }

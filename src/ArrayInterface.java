@@ -1,4 +1,5 @@
-
+// DIANA RAMIREZ
+// PROJECT 3 DATA STRUCTURES
 //this is a new interface
 
 public interface ArrayInterface<E> {

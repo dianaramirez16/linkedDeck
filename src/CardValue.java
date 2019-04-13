@@ -1,5 +1,7 @@
 //reference: https://gist.github.com/Rob-bie/b490814b4b7cbb070d58
 //reference: https://howtoprogramwithjava.com/enums/
+// DIANA RAMIREZ
+// PROJECT 3 DATA STRUCTURES
 
 public enum CardValue {
       ACE(1),

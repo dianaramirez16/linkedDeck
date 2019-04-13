@@ -1,3 +1,6 @@
+// DIANA RAMIREZ
+// PROJECT 3 DATA STRUCTURES
+
 public class ArrayList <E> implements ArrayInterface<E> {
       
       public int size; //how many elements in the AL

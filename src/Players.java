@@ -1,3 +1,6 @@
+// DIANA RAMIREZ
+// PROJECT 3 DATA STRUCTURES
+
 public class Players {
       public static String name ="";
       public static int wins=0;

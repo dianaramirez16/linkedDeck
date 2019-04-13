@@ -1,6 +1,8 @@
 //deck accessed by main declared as arraylist
 //reference: https://gist.github.com/Rob-bie/b490814b4b7cbb070d58
 //reference: https://howtoprogramwithjava.com/enums/
+// DIANA RAMIREZ
+// PROJECT 3 DATA STRUCTURES
 
 import java.util.Random;
 public class Deck extends Card {
@@ -34,7 +36,7 @@ public class Deck extends Card {
                   int change = i + random.nextInt(n - i);
                   swap(a, i, change);
             }
-           // System.out.println("shuffled: " + protoDeck + "\n");
+            System.out.println("shuffled: " + protoDeck + "\n");
       }
       
       private static void swap(ArrayList<Card> a, int i, int change) {

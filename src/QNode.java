@@ -1,3 +1,6 @@
+// DIANA RAMIREZ
+// PROJECT 3 DATA STRUCTURES
+
 //this is the node for the QUEUE
 //reference: https://www.geeksforgeeks.org/queue-set-2-linked-list-implementation/
 public class QNode {

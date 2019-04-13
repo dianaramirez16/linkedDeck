@@ -1,5 +1,7 @@
 // Author: Diana Ramirez
 // Queue implementation using circular array
+// DIANA RAMIREZ
+// PROJECT 3 DATA STRUCTURES
 
 public class Queue {
       private QNode front, rear;   //QUEUE POINTERS
@@ -13,7 +15,7 @@ public class Queue {
             return;
       }
       
-      public void enQueue(Card card) {          // this method adds elements to the Queue
+      public void addQueue(Card card) {          // this method adds elements to the Queue
             //first create new node
             QNode temp = new QNode(card);
             if (this.rear ==null) {
