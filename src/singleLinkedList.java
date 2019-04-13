@@ -7,7 +7,7 @@ public class singleLinkedList {
       //constructor to create LL
       public singleLinkedList() {
             this.head = new Node(null);   // creates head node
-            this.size = 0;  //initializes list to 0 nodes
+            this.size = 13;  //initializes list to 0 nodes
       }
       
       //addfirst must copy head node "next" to node being inserted
