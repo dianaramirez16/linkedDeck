@@ -21,5 +21,9 @@ public class QNode {
       }
       
       
+      public Card getCard() {
+            return this.card;
+      }
+      
       
 }
