@@ -4,12 +4,23 @@
 public class Card {
       private CardSuit cardSuit;
       private CardValue cardValue;
-      String playerName="null";
+      String playerName="";
+      
+      public Card() {
+            this.cardValue = null;
+            this.cardSuit = null;
+            this.playerName = "";
+      }
+      
       
       protected Card (CardValue cardValue, CardSuit cardSuit) {
             this.cardValue = cardValue;
             this.cardSuit = cardSuit;
-            this.playerName="null";
+            this.playerName="";
+      }
+      
+      public String getCardPlayerName() {
+            return playerName;
       }
       
       public CardSuit getCardSuit() {
@@ -22,6 +33,10 @@ public class Card {
       
       public CardValue getCardValue() {
             return cardValue;
+      }
+      
+      public void setCardPlayerName(String n) {
+            this.playerName = n;
       }
       
       public void setCardValue(CardValue cardValue) {
