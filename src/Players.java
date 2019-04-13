@@ -1,11 +1,16 @@
 public class Players {
-      //public static Deck[] handOfCards;
-      public Queue playerHand;
-      public static String name ="null";
-      public static int wins;
-      public static int losses;
+      public static Queue playerHand;
+      public static String name ="";
+      public static int wins=0;
+      public static int losses=0;
       public static Boolean isWinner=false;
+      /*
+      //overhead constructor
+      public static Players Players() {
+            return Players();
+      }*/
       
+      //overhead constructor
       public Players(String n){
             playerHand = new Queue();   //change to QUEUE or use only QUEUE methods
             this.name=n;
@@ -13,6 +18,7 @@ public class Players {
             losses=0;
             isWinner=false;
       }
+      
       
       public static String getName() {
             return name;

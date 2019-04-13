@@ -1,30 +1,39 @@
 // reference for shuffle method: https://www.vogella.com/tutorials/JavaAlgorithmsShuffle/article.html
 import java.util.Random;
-//import java.util.List;
 
 public class menuClient {
-      public static Players[] playersArray = new Players[4];  //holds players
+      static Players[] playersArray;  // array holds players
       
       public static void main(String[] args) {
             ArrayList<Card> d = Deck.newDeck();  //prints first time
             Deck.shuffleList(d); //shuffles & prints shuffled
             createPlayers();
+      
+            for (int i=0; i<4; i++){
+                  String s = "Player "+ i + " : " +  (playersArray[i].getName());
+            }
+            
+            
             dealCards(d);
             startGame();
       }
       
       //method to generate players. each player gets a linked list "hand"
       public static void createPlayers() {
-            //String playerName="Player";
+      
+            Players player1 = new Players("Player1");
+            Players player2 = new Players("Player2");
+            Players player3 = new Players("Player3");
+            Players player4 = new Players("Player4");
             
-            for (int i =0; i<4; i++){  //loops 4 times to create 4 players
-                  playersArray[i] = new Players("player"+(i+1));
-                  System.out.println(playersArray[i].getName());  //prints players for debugging
-            }
-            System.out.println(playersArray[0].getName());
+           
+            /*System.out.println("player1 name: " + playersArray[0].getName());
             System.out.println(playersArray[1].getName());
             System.out.println(playersArray[2].getName());
             System.out.println(playersArray[3].getName());
+            */
+            playersArray = new Players[] {player1, player2, player3, player4};
+            
       }
       
       public static void dealCards(ArrayList<Card> d) {
