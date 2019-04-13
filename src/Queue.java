@@ -55,11 +55,11 @@ public class Queue {
             QNode temp = front; //iterator to go over the nodes starting at the head
             if(temp == null)
             {
-                  value += " | " + temp;
+                  value += "   |   " + temp;
                   
             }
             while(temp.next !=null) { //while there is still a next
-                  value += " | " + temp.next.card;  //get node data
+                  value += "   |   " + temp.next.card;  //get node data
                   temp = temp.next;				// move to next node
             }
             return value;

@@ -43,7 +43,7 @@ public class Card {
             this.cardValue = cardValue;
       }
       
-      public Boolean equalsTo(Card p, Card o) {
+      public static Boolean equalsTo(Card p, Card o) {
             if (p.getCardValue().equals(o.getCardValue())){  //cards are the same number
                   if(p.cardSuit.getCardSuit() > (o.cardSuit.getCardSuit())) {  //compare cardSuits p>o
                         return true;

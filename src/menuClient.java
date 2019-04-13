@@ -39,6 +39,7 @@ public class menuClient {
             Players playerObj2 = new Players("Player2");
             Players playerObj3 = new Players("Player3");
             Players playerObj4 = new Players("Player4");*/
+            
             playersArray = new Queue[]{player1, player2, player3, player4};
       
             //System.out.println("Player1's hand: " + d.get(0) + " | " + d.get(1) + " | " + d.get(2) + " | " + d.get(3) + "\n\t |" + d.get(4) + " | " + d.get(5) + " | " + d.get(6) + " | " + d.get(7) + "\n\t | " + d.get(8) + " | " + d.get(9) + " | " + d.get(10) + " | " + d.get(11) + " | " + d.get(12));
@@ -50,10 +51,6 @@ public class menuClient {
             //player4
             player4.enQueue(d.get(39));player4.enQueue(d.get(40));player4.enQueue(d.get(41));player4.enQueue(d.get(42));player4.enQueue(d.get(43));player4.enQueue(d.get(44));player4.enQueue(d.get(45));player4.enQueue(d.get(46));player4.enQueue(d.get(47));player4.enQueue(d.get(48));player4.enQueue(d.get(49));player4.enQueue(d.get(50));player4.enQueue(d.get(51));
       
-            System.out.println("Player1's hand: " + player1.toString());
-            System.out.println("Player2's hand: " + player2.toString());
-            System.out.println("Player3's hand: " + player3.toString());
-            System.out.println("Player4's hand: " + player4.toString());
       }
       
       
@@ -78,23 +75,26 @@ public class menuClient {
             Card firstCard4 = tempNode4.getCard();
             
             System.out.println("Round 1: \n");
-            System.out.println("Player1's hand: " + firstCard1 + player1.toString()); //prints hands
-            System.out.println("Player2's hand: " + firstCard2 + player2.toString());
-            System.out.println("Player3's hand: " + firstCard3 + player3.toString());
-            System.out.println("Player4's hand: " + firstCard4 + player4.toString());
+            System.out.println("Player1's hand:  " + firstCard1 + player1.toString()); //prints hands
+            System.out.println("Player2's hand:  " + firstCard2 + player2.toString());
+            System.out.println("Player3's hand:  " + firstCard3 + player3.toString());
+            System.out.println("Player4's hand:  " + firstCard4 + player4.toString());
             
             //player 1 plays
-          
             tableQueue.enQueue(firstCard1);
+            player1.deQueue();
+            
             //player 2 plays
-          
             tableQueue.enQueue(firstCard2);
+            player2.deQueue();
+            
             //player 3 plays
-         
             tableQueue.enQueue(firstCard3);
+            player3.deQueue();
+            
             //player 4 plays:
-          
             tableQueue.enQueue(firstCard4);
+            player4.deQueue();
             
             randomPlayer++; //random player incremented
             
@@ -103,14 +103,50 @@ public class menuClient {
             Card cardPlayed = tempNode.getCard();
             tableQueue.enQueue(cardPlayed);*/
             
-            System.out.println("\n\ntable: " + tableQueue);
+            System.out.println("\ntable: " + tableQueue + "\n");
+      
+            QNode tempNode5 = player1.peek();   //prints first variable
+            QNode tempNode6 = player2.peek();
+            QNode tempNode7 = player3.peek();
+            QNode tempNode8 = player4.peek();
+            Card secondCard1 = tempNode5.getCard();
+            Card secondCard2 = tempNode6.getCard();
+            Card secondCard3 = tempNode7.getCard();
+            Card secondCard4 = tempNode8.getCard();
+      
+            System.out.println("Winner: ");
+            
+            
+            
+            
+            System.out.println("Round 2: \n");
+            System.out.println("Player1's hand:  " + secondCard1 + player1.toString()); //prints hands
+            System.out.println("Player2's hand:  " + secondCard2 + player2.toString());
+            System.out.println("Player3's hand:  " + secondCard3 + player3.toString());
+            System.out.println("Player4's hand:  " + secondCard4 + player4.toString());
+      
       
       }
 
-      
-            //create queue as table where cards are shown
-            //method to print after each round, the cards in every player's hands
-            //method to play for 15 rounds or a player has all cards, check for a tie
-            //
+      public static Card findWinner(Card card1, Card card2, Card card3, Card card4) {
+            Card winningCard = null;
+            //4 > 3
+            if (Card.equalsTo(card1, card2)) { //card 1 > 2
+                  if (Card.equalsTo(card1, card3)) { //card 1 > 3
+                        if (Card.equalsTo(card1, card4)) {//card 1 > all
+                              return winningCard = card1;
+                        } else return winningCard = card4; //card 4 > all
+                  } else if (Card.equalsTo(card3, card4)) { // card 3 > all
+                        return winningCard = card3;
+                  } else return winningCard = card4;
+            }else if (Card.equalsTo(card2, card3)) { //card 2 > 3
+                  if (Card.equalsTo(card2, card4)){ //card 2 > 4
+                        return winningCard = card2;
+                  } else return winningCard = card4;
+            } else if (Card.equalsTo(card3, card4)) { //card 3 is greater
+                  return winningCard = card3;
+            } else return winningCard = card4;
+            
+      }
  
 }
