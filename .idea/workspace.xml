@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a79c8f9b-cfbc-4a89-a11a-00d58f4bbd33" name="Default Changelist" comment="changed Stack back to arraylist for future shuffle methods">
-      <change beforePath="$PROJECT_DIR$/src/menuClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menuClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Players.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Players.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/menuClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="73" column="23" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
+            <state relative-caret-position="233">
+              <caret line="77" column="12" lean-forward="true" selection-start-line="77" selection-start-column="12" selection-end-line="77" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -39,32 +39,28 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Players.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+            <state relative-caret-position="255">
+              <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
               <folding>
-                <element signature="e#304#305#0" expanded="true" />
-                <element signature="e#337#338#0" expanded="true" />
-                <element signature="e#383#384#0" expanded="true" />
-                <element signature="e#423#424#0" expanded="true" />
-                <element signature="e#459#460#0" expanded="true" />
-                <element signature="e#492#493#0" expanded="true" />
-                <element signature="e#530#531#0" expanded="true" />
-                <element signature="e#565#566#0" expanded="true" />
-                <element signature="e#665#666#0" expanded="true" />
-                <element signature="e#702#703#0" expanded="true" />
-                <element signature="e#755#756#0" expanded="true" />
-                <element signature="e#794#795#0" expanded="true" />
-                <element signature="e#627#628#0" expanded="true" />
-                <element signature="e#679#680#0" expanded="true" />
-                <element signature="e#1058#1059#0" expanded="true" />
-                <element signature="e#1096#1097#0" expanded="true" />
-                <element signature="e#1150#1151#0" expanded="true" />
-                <element signature="e#1184#1185#0" expanded="true" />
-                <element signature="e#901#902#0" expanded="true" />
-                <element signature="e#939#940#0" expanded="true" />
+                <element signature="e#520#521#0" expanded="true" />
+                <element signature="e#553#554#0" expanded="true" />
+                <element signature="e#596#597#0" expanded="true" />
+                <element signature="e#629#630#0" expanded="true" />
+                <element signature="e#674#675#0" expanded="true" />
+                <element signature="e#709#710#0" expanded="true" />
+                <element signature="e#758#759#0" expanded="true" />
+                <element signature="e#795#796#0" expanded="true" />
+                <element signature="e#855#856#0" expanded="true" />
+                <element signature="e#894#895#0" expanded="true" />
+                <element signature="e#945#946#0" expanded="true" />
+                <element signature="e#977#978#0" expanded="true" />
+                <element signature="e#1029#1030#0" expanded="true" />
+                <element signature="e#1059#1060#0" expanded="true" />
+                <element signature="e#1108#1109#0" expanded="true" />
+                <element signature="e#1138#1139#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -163,11 +159,11 @@
         <option value="$PROJECT_DIR$/src/ArrayInterface.java" />
         <option value="$PROJECT_DIR$/src/CardValue.java" />
         <option value="$PROJECT_DIR$/src/CardSuit.java" />
-        <option value="$PROJECT_DIR$/src/Players.java" />
         <option value="$PROJECT_DIR$/src/ArrayList.java" />
         <option value="$PROJECT_DIR$/src/Card.java" />
         <option value="$PROJECT_DIR$/src/Deck.java" />
         <option value="$PROJECT_DIR$/src/menuClient.java" />
+        <option value="$PROJECT_DIR$/src/Players.java" />
       </list>
     </option>
   </component>
@@ -385,35 +381,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Players.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding>
-            <element signature="e#304#305#0" expanded="true" />
-            <element signature="e#337#338#0" expanded="true" />
-            <element signature="e#383#384#0" expanded="true" />
-            <element signature="e#423#424#0" expanded="true" />
-            <element signature="e#459#460#0" expanded="true" />
-            <element signature="e#492#493#0" expanded="true" />
-            <element signature="e#530#531#0" expanded="true" />
-            <element signature="e#565#566#0" expanded="true" />
-            <element signature="e#665#666#0" expanded="true" />
-            <element signature="e#702#703#0" expanded="true" />
-            <element signature="e#755#756#0" expanded="true" />
-            <element signature="e#794#795#0" expanded="true" />
-            <element signature="e#627#628#0" expanded="true" />
-            <element signature="e#679#680#0" expanded="true" />
-            <element signature="e#1058#1059#0" expanded="true" />
-            <element signature="e#1096#1097#0" expanded="true" />
-            <element signature="e#1150#1151#0" expanded="true" />
-            <element signature="e#1184#1185#0" expanded="true" />
-            <element signature="e#901#902#0" expanded="true" />
-            <element signature="e#939#940#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107">
@@ -481,8 +448,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/menuClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="73" column="23" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
+        <state relative-caret-position="233">
+          <caret line="77" column="12" lean-forward="true" selection-start-line="77" selection-start-column="12" selection-end-line="77" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Players.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding>
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#596#597#0" expanded="true" />
+            <element signature="e#629#630#0" expanded="true" />
+            <element signature="e#674#675#0" expanded="true" />
+            <element signature="e#709#710#0" expanded="true" />
+            <element signature="e#758#759#0" expanded="true" />
+            <element signature="e#795#796#0" expanded="true" />
+            <element signature="e#855#856#0" expanded="true" />
+            <element signature="e#894#895#0" expanded="true" />
+            <element signature="e#945#946#0" expanded="true" />
+            <element signature="e#977#978#0" expanded="true" />
+            <element signature="e#1029#1030#0" expanded="true" />
+            <element signature="e#1059#1060#0" expanded="true" />
+            <element signature="e#1108#1109#0" expanded="true" />
+            <element signature="e#1138#1139#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

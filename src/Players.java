@@ -1,24 +1,21 @@
 public class Players {
-      public static Deck[] handOfCards;
-      public static String name;
+      //public static Deck[] handOfCards;
+      public Queue playerHand;
+      public static String name ="null";
       public static int wins;
       public static int losses;
       public static Boolean isWinner=false;
       
       public Players(String n){
-            Deck[] handOfCards = new Deck[13];
-            name=n;
-            int wins=0;
-            int losses=0;
+            playerHand = new Queue();   //change to QUEUE or use only QUEUE methods
+            this.name=n;
+            wins=0;
+            losses=0;
             isWinner=false;
       }
       
       public static String getName() {
             return name;
-      }
-      
-      public static Deck[] getHandOfCards() {
-            return handOfCards;
       }
       
       public static int getWins() {
@@ -35,10 +32,6 @@ public class Players {
       
       public static void setWinner(Boolean winner) {
             isWinner = winner;
-      }
-      
-      public static void setHandOfCards(Deck[] h) {
-            handOfCards = h;
       }
       
       public static void setLosses(int l) {
