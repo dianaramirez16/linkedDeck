@@ -7,11 +7,6 @@ public class Queue {
       
       // front, rear, & size are methods of a queue. first in first out
       
-      //Data
-      // private Card[] Q;     //array reference for the actual queue. queue is null atm
-      // private int capacity;   //max elements in queue
-      // private final int DEFAULT_CAPACITY=52; // default cap
-      
       //default constructor creates the queue
       public Queue() {
             this.front=this.rear=null; //in the beginning front is same as rear because queue is empty
@@ -46,7 +41,7 @@ public class Queue {
             return temp;            //return deleted element
       }
       
-     
+      
       public QNode peek() { //returns element at front
             if (size==0) {
                   System.out.println("queue does not contain anything yet!");
@@ -56,8 +51,15 @@ public class Queue {
       
       //method to display contents of the queue
       public String toString() {
-            String value = "List: ";
+            String value = "";
             QNode temp = front; //iterator to go over the nodes starting at the head
+            
+            if(temp == null)
+            {
+                  value += " | " + temp;
+                  
+            }
+            
             while(temp.next !=null) { //while there is still a next
                   value += " | " + temp.next.card;  //get node data
                   temp = temp.next;				// move to next node
