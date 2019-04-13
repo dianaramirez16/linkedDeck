@@ -68,7 +68,7 @@ public class menuClient {
             int randomPlayer = 1 + rand.nextInt(4 - 1);
             System.out.println("Player " + randomPlayer + " has been randomly selected to go first.");
       
-            QNode tempNode1 = player1.peek();
+            QNode tempNode1 = player1.peek();   //prints first variable
             QNode tempNode2 = player2.peek();
             QNode tempNode3 = player3.peek();
             QNode tempNode4 = player4.peek();
@@ -77,55 +77,37 @@ public class menuClient {
             Card firstCard3 = tempNode3.getCard();
             Card firstCard4 = tempNode4.getCard();
             
-      
-            System.out.println("Player1's hand: " + firstCard1 + player1.toString());
+            System.out.println("Round 1: \n");
+            System.out.println("Player1's hand: " + firstCard1 + player1.toString()); //prints hands
             System.out.println("Player2's hand: " + firstCard2 + player2.toString());
             System.out.println("Player3's hand: " + firstCard3 + player3.toString());
             System.out.println("Player4's hand: " + firstCard4 + player4.toString());
-      
             
-            if (randomPlayer==1) {
-                  QNode tempNode = playersArray[0].peek();
-                 // System.out.println("qnode: " + tempNode);
-      
-                  Card cardPlayed = tempNode.getCard();
-                  System.out.println("cardplayed: " + cardPlayed );
-                  tableQueue.enQueue(cardPlayed);
-            } else if (randomPlayer==2) {
-                  QNode tempNode = playersArray[1].peek();
-                 // System.out.println("qnode: " + tempNode);
-      
-                  Card cardPlayed = tempNode.getCard();
-                  System.out.println("cardplayed: " + cardPlayed );
-                  tableQueue.enQueue(cardPlayed);
-            } else if (randomPlayer==3) {
-                  QNode tempNode = playersArray[2].peek();
-                  //System.out.println("qnode: " + tempNode);
-      
-                  Card cardPlayed = tempNode.getCard();
-                  System.out.println("cardplayed: " + cardPlayed );
-                  tableQueue.enQueue(cardPlayed);
-            } else if (randomPlayer==4) {
-                  QNode tempNode = playersArray[3].peek();
-                 // System.out.println("qnode: " + tempNode);
-                  
-                  Card cardPlayed = tempNode.getCard();
-                  System.out.println("cardplayed: " + cardPlayed );
-                  tableQueue.enQueue(cardPlayed);
-            }
+            //player 1 plays
+          
+            tableQueue.enQueue(firstCard1);
+            //player 2 plays
+          
+            tableQueue.enQueue(firstCard2);
+            //player 3 plays
+         
+            tableQueue.enQueue(firstCard3);
+            //player 4 plays:
+          
+            tableQueue.enQueue(firstCard4);
             
+            randomPlayer++; //random player incremented
             
+            /*
             QNode tempNode = playersArray[randomPlayer].peek();   //first qnode in rand players deck
             Card cardPlayed = tempNode.getCard();
-            tableQueue.enQueue(cardPlayed);
-            System.out.println("table: " + tableQueue);
+            tableQueue.enQueue(cardPlayed);*/
+            
+            System.out.println("\n\ntable: " + tableQueue);
       
       }
 
       
-            //method to select random player to start
-            //method to display player's hands
-            //print linked lists
             //create queue as table where cards are shown
             //method to print after each round, the cards in every player's hands
             //method to play for 15 rounds or a player has all cards, check for a tie
