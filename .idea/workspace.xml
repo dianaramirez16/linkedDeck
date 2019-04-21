@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a79c8f9b-cfbc-4a89-a11a-00d58f4bbd33" name="Default Changelist" comment="changed Stack back to arraylist for future shuffle methods">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/menuClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menuClient.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,11 +20,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/menuClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="109" column="13" lean-forward="true" selection-start-line="109" selection-start-column="13" selection-end-line="109" selection-end-column="13" />
+            <state relative-caret-position="170">
+              <caret line="93" column="8" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="8" />
               <folding>
                 <element signature="method#dealCards#0;class#menuClient#0" />
                 <element signature="method#playOrder#0;class#menuClient#0" />
+                <element signature="method#findWinner#0;class#menuClient#0" />
                 <element signature="method#findWinner#0;class#menuClient#0" />
                 <element signature="method#clearTable#0;class#menuClient#0" />
               </folding>
@@ -253,7 +255,7 @@
       <window_info anchor="bottom" id="Terminal" order="6" weight="0.32978722" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3297491" />
-      <window_info active="true" anchor="bottom" x="-4" y="46" width="800" height="871" id="Run" order="9" sideWeight="0.50107414" side_tool="true" type="FLOATING" visible="true" weight="0.58162034" />
+      <window_info active="true" anchor="bottom" x="-4" y="46" width="830" height="861" id="Run" order="9" sideWeight="0.50107414" side_tool="true" type="FLOATING" visible="true" weight="0.58162034" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4989259" weight="0.21470246" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -420,11 +422,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/menuClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="109" column="13" lean-forward="true" selection-start-line="109" selection-start-column="13" selection-end-line="109" selection-end-column="13" />
+        <state relative-caret-position="170">
+          <caret line="93" column="8" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="8" />
           <folding>
             <element signature="method#dealCards#0;class#menuClient#0" />
             <element signature="method#playOrder#0;class#menuClient#0" />
+            <element signature="method#findWinner#0;class#menuClient#0" />
             <element signature="method#findWinner#0;class#menuClient#0" />
             <element signature="method#clearTable#0;class#menuClient#0" />
           </folding>
