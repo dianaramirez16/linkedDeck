@@ -5,6 +5,7 @@
 import java.util.Random;
 
 public class menuClient {
+      static Queue tableQueue = new Queue();
       static Queue player1 = new Queue();   //change to QUEUE or use only QUEUE methods
       static Queue player2 = new Queue();   //change to QUEUE or use only QUEUE methods
       static Queue player3 = new Queue();   //change to QUEUE or use only QUEUE methods
@@ -45,7 +46,7 @@ public class menuClient {
       
       
       public static void startGame(){
-            Queue tableQueue = new Queue();
+            
             Card nullCard = new Card();
             tableQueue.addQueue(nullCard);
       
