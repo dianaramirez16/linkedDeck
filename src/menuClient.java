@@ -117,13 +117,18 @@ public class menuClient {
             Card winningCard1 = findWinningCard(firstCard1,firstCard2,firstCard3,firstCard4);  //returns card obj
             Players tempWinner = findWinner(winningCard1, firstCard1, firstCard2, firstCard3,firstCard4);  //returns players object
             
+            //**********************************
+            //**********************************
+            //**********************************
+            //**********************************
+            //**********************************
             
-            
+            clearTable(tableQueue);
             
             player1.deQueue(); player2.deQueue(); player3.deQueue(); player4.deQueue();
             
             
-// ---------------------------------------------------
+/* ---------------------------------------------------
             
             System.out.println("\n-----Round 2: \n");
             System.out.println("Player1's hand:  " + secondCard1 + player1.toString()); //prints hands
@@ -263,7 +268,7 @@ public class menuClient {
             }
             tableQueue.deQueue();tableQueue.deQueue();tableQueue.deQueue();tableQueue.deQueue();
       
-      
+      */
       
       
       }
@@ -313,7 +318,7 @@ public class menuClient {
             
       }
  
-      public Queue clearTable(Queue tableQueue){
+      public static Queue clearTable(Queue tableQueue){
             tableQueue.deQueue();
             tableQueue.deQueue();
             tableQueue.deQueue();
