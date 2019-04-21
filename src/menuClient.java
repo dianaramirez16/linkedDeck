@@ -317,7 +317,26 @@ public class menuClient {
       }
       
       public static void declareWinner(Queue p1, Queue p2, Queue p3, Queue p4){
-            System.out.println("size p1 " + p1.getSize());
+            int values[] = {p1.getSize(), p2.getSize(), p3.getSize(), p4.getSize()};
+            int largest = values[0];
+            for (int i=0; i<values.length; i++){
+                  if (values[i] > largest)
+                        largest = values[i];
+            }
+            
+            if (largest==p1.getSize()){
+                  System.out.println("winner: Player1, congrats! ");
+            } else if (largest==p2.getSize()) {
+                  System.out.println("winner: Player2, congrats! ");
+            } else if (largest==p3.getSize()) {
+                  System.out.println("winner: Player3, congrats! ");
+            } else {
+                  System.out.println("winner: Player4, congrats! ");
+            }
+            
+            System.out.println("winning hand had " + (largest+4) + " cards");
+            //prints values for debugging
+            
       }
       
       public static void playOrder(int o, Card c1, Card c2, Card c3, Card c4){
