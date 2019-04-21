@@ -54,8 +54,7 @@ public class menuClient {
             Random rand = new Random();
             int randomPlayer = 1 + rand.nextInt(4 - 1);
             System.out.println("Player " + randomPlayer + " has been randomly selected to go first.");
-            //method for playOrder accepts randomPlayer int as input
-            //prints hands
+            
             
       //----------------------- round 1
       
@@ -75,10 +74,7 @@ public class menuClient {
             System.out.println("Player4's hand:  " + firstCard4 + player4.toString());
             
             
-            //need to create method to notate who played and in what order they played
-            //method should accept int, denoting order of play
-            //method can also print tablequeue contents, setupTable, or playRound
-            //return is void
+            
             
             //player 1 plays
             tableQueue.addQueue(firstCard1); player1.deQueue();
@@ -265,10 +261,19 @@ public class menuClient {
       
       
       }
+      //method for playOrder accepts randomPlayer int as input
+      //prints hands
+      //need to create method to notate who played and in what order they played
+      //method should accept int, denoting order of play
+      //method can also print tablequeue contents, setupTable, or playRound
+      //return is void
       
-      // new method for finding winner should accept winning card, and cards played in that round
-      // should return winner name: String
+      
+      
+      
       public static Players findWinner(Card winningCard1, Card c1, Card c2, Card c3, Card c4){
+            // new method for finding winner should accept winning card, and cards played in that round
+            // should return winner name: String
             Players winningPlayer = new Players("Winner");
             
             if (winningCard1==c1){
@@ -288,7 +293,6 @@ public class menuClient {
             System.out.println("Winner: " + winningPlayer.getName());  //print winner name
             return winningPlayer;
       }
-      
       
       public static Card findWinningCard(Card card1, Card card2, Card card3, Card card4) {
             Card winningCard = null;
