@@ -19,10 +19,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/menuClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="46" column="6" lean-forward="true" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
+            <state relative-caret-position="552">
+              <caret line="43" column="376" selection-start-line="43" selection-start-column="376" selection-end-line="43" selection-end-column="376" />
               <folding>
-                <element signature="method#dealCards#0;class#menuClient#0" />
+                <element signature="method#main#0;class#menuClient#0" />
                 <element signature="method#findWinner#0;class#menuClient#0" />
               </folding>
             </state>
@@ -418,10 +418,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/menuClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="46" column="6" lean-forward="true" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
+        <state relative-caret-position="552">
+          <caret line="43" column="376" selection-start-line="43" selection-start-column="376" selection-end-line="43" selection-end-column="376" />
           <folding>
-            <element signature="method#dealCards#0;class#menuClient#0" />
+            <element signature="method#main#0;class#menuClient#0" />
             <element signature="method#findWinner#0;class#menuClient#0" />
           </folding>
         </state>

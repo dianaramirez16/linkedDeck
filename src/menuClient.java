@@ -11,9 +11,9 @@ public class menuClient {
       static Queue player4 = new Queue();   //change to QUEUE or use only QUEUE methods
       
       public static void main(String[] args) {
-            ArrayList<Card> d = Deck.newDeck();  //prints first time
+            ArrayList<Card> d = Deck.newDeck();
             Deck.shuffleList(d); //shuffles & prints shuffled
-            dealCards(d);  //deals and creates players
+            dealCards(d);  //deals and declares players
             startGame();
       }
       
@@ -42,7 +42,6 @@ public class menuClient {
             player3.addQueue(d.get(26));player3.addQueue(d.get(27));player3.addQueue(d.get(28));player3.addQueue(d.get(29));player3.addQueue(d.get(30));player3.addQueue(d.get(31));player3.addQueue(d.get(32));player3.addQueue(d.get(33));player3.addQueue(d.get(34));player3.addQueue(d.get(35));player3.addQueue(d.get(36));player3.addQueue(d.get(37));player3.addQueue(d.get(38));
             //player4
             player4.addQueue(d.get(39));player4.addQueue(d.get(40));player4.addQueue(d.get(41));player4.addQueue(d.get(42));player4.addQueue(d.get(43));player4.addQueue(d.get(44));player4.addQueue(d.get(45));player4.addQueue(d.get(46));player4.addQueue(d.get(47));player4.addQueue(d.get(48));player4.addQueue(d.get(49));player4.addQueue(d.get(50));player4.addQueue(d.get(51));
-      
       }
       
       
