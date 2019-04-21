@@ -109,17 +109,23 @@ public class menuClient {
             Card secondCard4 = tempNode8.getCard();
       
             Card winningCard1 = findWinner(firstCard1,firstCard2,firstCard3,firstCard4);
-            System.out.println("Winner: " + winningCard1 );
+            Players winningPlayer = new Players("Winner");
             
             if (winningCard1==firstCard1){
                   player1.addQueue(firstCard1); player1.addQueue(firstCard2); player1.addQueue(firstCard3); player1.addQueue(firstCard4);
+                  winningPlayer.setName("Player1 with " + winningCard1);
             } else if (winningCard1==firstCard2) {
                   player2.addQueue(firstCard1); player2.addQueue(firstCard2); player2.addQueue(firstCard3); player2.addQueue(firstCard4);
+                  winningPlayer.setName("Player2 with " + winningCard1);
             } else if (winningCard1==firstCard3) {
                   player3.addQueue(firstCard1); player3.addQueue(firstCard2); player3.addQueue(firstCard3); player3.addQueue(firstCard4);
+                  winningPlayer.setName("Player3 with " + winningCard1);
             } else {
                   player4.addQueue(firstCard1); player4.addQueue(firstCard2); player4.addQueue(firstCard3); player4.addQueue(firstCard4);
+                  winningPlayer.setName("Player4 with " + winningCard1);
             }
+      
+            System.out.println("Winner: " + winningPlayer.getName());  //print winner name
             tableQueue.deQueue();tableQueue.deQueue();tableQueue.deQueue();tableQueue.deQueue();
             player1.deQueue(); player2.deQueue(); player3.deQueue(); player4.deQueue();
             
