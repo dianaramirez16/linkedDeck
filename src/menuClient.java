@@ -68,45 +68,19 @@ public class menuClient {
             Card firstCard4 = tempNode4.getCard();
             
             System.out.println("-----Round 1: \n");
-            System.out.println("Player1's hand:  " + firstCard1 + player1.toString()); //prints hands
-            System.out.println("Player2's hand:  " + firstCard2 + player2.toString());
-            System.out.println("Player3's hand:  " + firstCard3 + player3.toString());
-            System.out.println("Player4's hand:  " + firstCard4 + player4.toString());
+            playOrder(randomPlayer, firstCard1, firstCard2, firstCard3, firstCard4); //prints starting hands
             
             
-            
-            
-            //player 1 plays
+            //add cards to table queue
             tableQueue.addQueue(firstCard1); player1.deQueue();
-            
-            //player 2 plays
             tableQueue.addQueue(firstCard2); player2.deQueue();
-            
-            //player 3 plays
             tableQueue.addQueue(firstCard3); player3.deQueue();
-            
-            //player 4 plays:
             tableQueue.addQueue(firstCard4); player4.deQueue();
             
             System.out.println("\nTable : " + tableQueue + "\n");
-      
-            
-      
             Card winningCard1 = findWinningCard(firstCard1,firstCard2,firstCard3,firstCard4);  //returns card obj
             Players tempWinner = findWinner(winningCard1, firstCard1, firstCard2, firstCard3,firstCard4);  //returns players object
-            
-            //**********************************
-            //**********************************
-            //**********************************
-            //**********************************
-            //**********************************
-            
             clearTable(tableQueue);
-            
-        
-            
-            /*player1.deQueue(); player2.deQueue(); player3.deQueue(); player4.deQueue();
-            player1.deQueue(); player2.deQueue(); player3.deQueue(); player4.deQueue();*/
             
 /* ---------------------------------------------------
 
@@ -261,13 +235,33 @@ public class menuClient {
       
       
       }
-      //method for playOrder accepts randomPlayer int as input
-      //prints hands
-      //need to create method to notate who played and in what order they played
-      //method should accept int, denoting order of play
-      //method can also print tablequeue contents, setupTable, or playRound
-      //return is void
       
+      
+      public static void playOrder(int o, Card c1, Card c2, Card c3, Card c4){
+            //method for playOrder accepts randomPlayer int as input for first round
+            //return is void
+            if (o==1) {
+                  System.out.println("Player1 goes first:  " + c1 + player1.toString());
+                  System.out.println("Player2 goes next:  " + c2 + player2.toString());
+                  System.out.println("Player3 goes third:  " + c3 + player3.toString());
+                  System.out.println("Player4 goes last:  " + c4 + player4.toString());
+            } else if (o==2) {
+                  System.out.println("Player2 goes first:  " + c2 + player2.toString());
+                  System.out.println("Player3 goes next:  " + c3 + player3.toString());
+                  System.out.println("Player4 goes third:  " + c4 + player4.toString());
+                  System.out.println("Player1 goes last:  " + c1 + player1.toString());
+            } else if (o==3) {
+                  System.out.println("Player3 goes first:  " + c3 + player3.toString());
+                  System.out.println("Player4 goes next:  " + c4 + player4.toString());
+                  System.out.println("Player1 goes third:  " + c1 + player1.toString());
+                  System.out.println("Player2 goes last:  " + c2 + player2.toString());
+            } else {
+                  System.out.println("Player4 goes first:  " + c4 + player4.toString());
+                  System.out.println("Player1 goes next:  " + c1 + player1.toString());
+                  System.out.println("Player2 goes third:  " + c2 + player2.toString());
+                  System.out.println("Player3 goes last:  " + c3 + player3.toString());
+            }
+      }
       
       
       
@@ -290,7 +284,7 @@ public class menuClient {
                   winningPlayer.setName("Player4 with " + winningCard1);
             }
       
-            System.out.println("Winner: " + winningPlayer.getName());  //print winner name
+            System.out.println("WINNER : " + winningPlayer.getName());  //print winner name
             return winningPlayer;
       }
       

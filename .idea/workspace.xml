@@ -19,11 +19,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/menuClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="658">
-              <caret line="275" column="48" selection-start-line="275" selection-start-column="48" selection-end-line="275" selection-end-column="48" />
+            <state relative-caret-position="569">
+              <caret line="261" column="55" selection-start-line="261" selection-start-column="55" selection-end-line="261" selection-end-column="55" />
               <folding>
                 <element signature="method#main#0;class#menuClient#0" />
                 <element signature="method#dealCards#0;class#menuClient#0" />
+                <element signature="method#findWinner#0;class#menuClient#0" />
                 <element signature="method#findWinner#0;class#menuClient#0" />
               </folding>
             </state>
@@ -54,8 +55,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>reall</find>
-      <find>E</find>
       <find>obj</find>
       <find>@Override</find>
       <find>myStack</find>
@@ -84,6 +83,8 @@
       <find>firstCard4</find>
       <find>table 1</find>
       <find>playersArray</find>
+      <find>FOUR of DIAMONDS</find>
+      <find>winner:</find>
     </findStrings>
     <replaceStrings>
       <replace>CircularQueue</replace>
@@ -419,11 +420,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/menuClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="275" column="48" selection-start-line="275" selection-start-column="48" selection-end-line="275" selection-end-column="48" />
+        <state relative-caret-position="569">
+          <caret line="261" column="55" selection-start-line="261" selection-start-column="55" selection-end-line="261" selection-end-column="55" />
           <folding>
             <element signature="method#main#0;class#menuClient#0" />
             <element signature="method#dealCards#0;class#menuClient#0" />
+            <element signature="method#findWinner#0;class#menuClient#0" />
             <element signature="method#findWinner#0;class#menuClient#0" />
           </folding>
         </state>
