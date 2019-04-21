@@ -19,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/menuClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="297" column="41" selection-start-line="297" selection-start-column="41" selection-end-line="297" selection-end-column="41" />
+            <state relative-caret-position="428">
+              <caret line="309" column="44" selection-start-line="309" selection-start-column="44" selection-end-line="309" selection-end-column="44" />
               <folding>
                 <element signature="method#dealCards#0;class#menuClient#0" />
                 <element signature="method#playOrder#0;class#menuClient#0" />
@@ -56,7 +56,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Name</find>
       <find>var</find>
       <find>Player1's</find>
       <find>&quot;|&quot;</find>
@@ -86,20 +85,9 @@
       <find>2</find>
       <find>3</find>
       <find>4</find>
+      <find>fourthNode</find>
     </findStrings>
     <replaceStrings>
-      <replace>CircularQueue</replace>
-      <replace>ArrayList</replace>
-      <replace>Queue</replace>
-      <replace>Card</replace>
-      <replace>card</replace>
-      <replace>myDeck</replace>
-      <replace>cardSuit</replace>
-      <replace>&quot; | &quot;</replace>
-      <replace>second</replace>
-      <replace>addQueue</replace>
-      <replace>fourthCard5</replace>
-      <replace>findWinningCard</replace>
       <replace>c1</replace>
       <replace>c2</replace>
       <replace>c3</replace>
@@ -112,6 +100,24 @@
       <replace>6</replace>
       <replace>7</replace>
       <replace>8</replace>
+      <replace>sixthNode</replace>
+      <replace>eigthNode</replace>
+      <replace>ninthNode</replace>
+      <replace>tenthNode</replace>
+      <replace>eleventhNode</replace>
+      <replace>twelfthNode</replace>
+      <replace>thirteenthNode</replace>
+      <replace>fourteenthNode</replace>
+      <replace>fifteenthNode</replace>
+      <replace>seventh</replace>
+      <replace>eigth</replace>
+      <replace>ninth</replace>
+      <replace>tenth</replace>
+      <replace>eleventh</replace>
+      <replace>twelfth</replace>
+      <replace>thirteenth</replace>
+      <replace>fourteenth</replace>
+      <replace>fifteenth</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -427,8 +433,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/menuClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="297" column="41" selection-start-line="297" selection-start-column="41" selection-end-line="297" selection-end-column="41" />
+        <state relative-caret-position="428">
+          <caret line="309" column="44" selection-start-line="309" selection-start-column="44" selection-end-line="309" selection-end-column="44" />
           <folding>
             <element signature="method#dealCards#0;class#menuClient#0" />
             <element signature="method#playOrder#0;class#menuClient#0" />
