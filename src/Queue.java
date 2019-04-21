@@ -43,6 +43,10 @@ public class Queue {
             return temp;            //return deleted element
       }
       
+      public int getSize(){
+            return this.size;
+      }
+      
       
       public QNode peek() { //returns element at front
             if (size<0) {

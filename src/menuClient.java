@@ -152,7 +152,7 @@ public class menuClient {
             Card sixthCard7 = fourthNode3.getCard();
             Card sixthCard8 = fourthNode4.getCard();
             
-            System.out.println("\n----- Round 5: \n");
+            System.out.println("\n----- Round 6: \n");
             playOrder(roundWinner5, sixthCard5,sixthCard6,sixthCard7,sixthCard8); //prints starting hands
             System.out.println("\nCards on Table: " + tableQueue + "\n");
             Card winningCard6 = findWinningCard(sixthCard5,sixthCard6,sixthCard7,sixthCard8);  //returns card obj
@@ -169,7 +169,7 @@ public class menuClient {
             Card seventh7 = sixthNode3.getCard();
             Card seventh8 = sixthNode4.getCard();
       
-            System.out.println("\n----- Round 5: \n");
+            System.out.println("\n----- Round 7: \n");
             playOrder(roundWinner6, seventh5,seventh6,seventh7,seventh8); //prints starting hands
             System.out.println("\nCards on Table: " + tableQueue + "\n");
             Card winningCard7 = findWinningCard(seventh5,seventh6,seventh7,seventh8);  //returns card obj
@@ -186,7 +186,7 @@ public class menuClient {
             Card eigth7 = eigthNode3.getCard();
             Card eigth8 = eigthNode4.getCard();
       
-            System.out.println("\n----- Round 5: \n");
+            System.out.println("\n----- Round 8: \n");
             playOrder(roundWinner7, eigth5,eigth6,eigth7,eigth8); //prints starting hands
             System.out.println("\nCards on Table: " + tableQueue + "\n");
             Card winningCard8 = findWinningCard(eigth5,eigth6,eigth7,eigth8);  //returns card obj
@@ -203,7 +203,7 @@ public class menuClient {
             Card ninth7 = ninthNode3.getCard();
             Card ninth8 = ninthNode4.getCard();
       
-            System.out.println("\n----- Round 5: \n");
+            System.out.println("\n----- Round 9: \n");
             playOrder(roundWinner8, ninth5,ninth6,ninth7,ninth8); //prints starting hands
             System.out.println("\nCards on Table: " + tableQueue + "\n");
             Card winningCard9 = findWinningCard(ninth5,ninth6,ninth7,ninth8);  //returns card obj
@@ -220,7 +220,7 @@ public class menuClient {
             Card tenth7 = tenthNode3.getCard();
             Card tenth8 = tenthNode4.getCard();
       
-            System.out.println("\n----- Round 5: \n");
+            System.out.println("\n----- Round 10: \n");
             playOrder(roundWinner9, tenth5,tenth6,tenth7,tenth8); //prints starting hands
             System.out.println("\nCards on Table: " + tableQueue + "\n");
             Card winningCard10 = findWinningCard(tenth5,tenth6,tenth7,tenth8);  //returns card obj
@@ -237,7 +237,7 @@ public class menuClient {
             Card eleventh7 = eleventhNode3.getCard();
             Card eleventh8 = eleventhNode4.getCard();
       
-            System.out.println("\n----- Round 5: \n");
+            System.out.println("\n----- Round 11: \n");
             playOrder(roundWinner10, eleventh5,eleventh6,eleventh7,eleventh8); //prints starting hands
             System.out.println("\nCards on Table: " + tableQueue + "\n");
             Card winningCard11 = findWinningCard(eleventh5,eleventh6,eleventh7,eleventh8);  //returns card obj
@@ -254,7 +254,7 @@ public class menuClient {
             Card twelfth7 = twelfthNode3.getCard();
             Card twelfth8 = twelfthNode4.getCard();
       
-            System.out.println("\n----- Round 5: \n");
+            System.out.println("\n----- Round 12: \n");
             playOrder(roundWinner11, twelfth5,twelfth6,twelfth7,twelfth8); //prints starting hands
             System.out.println("\nCards on Table: " + tableQueue + "\n");
             Card winningCard12 = findWinningCard(twelfth5,twelfth6,twelfth7,twelfth8);  //returns card obj
@@ -271,7 +271,7 @@ public class menuClient {
             Card thirteenth7 = thirteenthNode3.getCard();
             Card thirteenth8 = thirteenthNode4.getCard();
       
-            System.out.println("\n----- Round 5: \n");
+            System.out.println("\n----- Round 13: \n");
             playOrder(roundWinner12, thirteenth5,thirteenth6,thirteenth7,thirteenth8); //prints starting hands
             System.out.println("\nCards on Table: " + tableQueue + "\n");
             Card winningCard13 = findWinningCard(thirteenth5,thirteenth6,thirteenth7,thirteenth8);  //returns card obj
@@ -288,7 +288,7 @@ public class menuClient {
             Card fourteenth7 = fourteenthNode3.getCard();
             Card fourteenth8 = fourteenthNode4.getCard();
       
-            System.out.println("\n----- Round 5: \n");
+            System.out.println("\n----- Round 14: \n");
             playOrder(roundWinner13, fourteenth5,fourteenth6,fourteenth7,fourteenth8); //prints starting hands
             System.out.println("\nCards on Table: " + tableQueue + "\n");
             Card winningCard14 = findWinningCard(fourteenth5,fourteenth6,fourteenth7,fourteenth8);  //returns card obj
@@ -305,15 +305,20 @@ public class menuClient {
             Card fifteenth7 = fifteenthNode3.getCard();
             Card fifteenth8 = fifteenthNode4.getCard();
       
-            System.out.println("\n----- Round 5: \n");
+            System.out.println("\n----- Round 15: \n");
             playOrder(roundWinner14, fifteenth5,fifteenth6,fifteenth7,fifteenth8); //prints starting hands
             System.out.println("\nCards on Table: " + tableQueue + "\n");
             Card winningCard15 = findWinningCard(fifteenth5,fifteenth6,fifteenth7,fifteenth8);  //returns card obj
             int roundWinner15 = findWinner(winningCard15, fifteenth5,fifteenth6,fifteenth7,fifteenth8);  //returns players object
             clearTable(tableQueue);
             
+            declareWinner(player1, player2, player3, player4);
+            
       }
       
+      public static void declareWinner(Queue p1, Queue p2, Queue p3, Queue p4){
+            System.out.println("size p1 " + p1.getSize());
+      }
       
       public static void playOrder(int o, Card c1, Card c2, Card c3, Card c4){
             //method for playOrder accepts randomPlayer int as input for first round
