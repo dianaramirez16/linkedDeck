@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a79c8f9b-cfbc-4a89-a11a-00d58f4bbd33" name="Default Changelist" comment="changed Stack back to arraylist for future shuffle methods">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/menuClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menuClient.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/menuClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="93" column="8" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="8" />
+            <state relative-caret-position="452">
+              <caret line="144" column="40" selection-start-line="144" selection-start-column="40" selection-end-line="144" selection-end-column="40" />
               <folding>
                 <element signature="method#dealCards#0;class#menuClient#0" />
                 <element signature="method#playOrder#0;class#menuClient#0" />
@@ -76,7 +75,6 @@
       <find>fourthCard1</find>
       <find>TEN of DIAMONDS</find>
       <find>enQueue</find>
-      <find>third</find>
       <find>KING of DIAMONDS</find>
       <find>findWinner</find>
       <find>firstCard1</find>
@@ -87,6 +85,7 @@
       <find>FOUR of DIAMONDS</find>
       <find>winner:</find>
       <find>playOrder</find>
+      <find>third</find>
     </findStrings>
     <replaceStrings>
       <replace>CircularQueue</replace>
@@ -97,16 +96,16 @@
       <replace>myDeck</replace>
       <replace>cardSuit</replace>
       <replace>&quot; | &quot;</replace>
-      <replace>third</replace>
       <replace>second</replace>
       <replace>addQueue</replace>
-      <replace>fourth</replace>
       <replace>fourthCard5</replace>
       <replace>findWinningCard</replace>
       <replace>c1</replace>
       <replace>c2</replace>
       <replace>c3</replace>
       <replace>c4</replace>
+      <replace>third</replace>
+      <replace>fourth</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -422,8 +421,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/menuClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="93" column="8" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="8" />
+        <state relative-caret-position="452">
+          <caret line="144" column="40" selection-start-line="144" selection-start-column="40" selection-end-line="144" selection-end-column="40" />
           <folding>
             <element signature="method#dealCards#0;class#menuClient#0" />
             <element signature="method#playOrder#0;class#menuClient#0" />

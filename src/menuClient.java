@@ -65,7 +65,6 @@ public class menuClient {
             Card firstCard2 = tempNode2.getCard();
             Card firstCard3 = tempNode3.getCard();
             Card firstCard4 = tempNode4.getCard();
-            
             System.out.println("----- Round 1: \n");
             playOrder(randomPlayer, firstCard1, firstCard2, firstCard3, firstCard4); //prints starting hands
             System.out.println("\nCards on Table: " + tableQueue + "\n");
@@ -83,7 +82,6 @@ public class menuClient {
             Card secondCard2 = tempNode6.getCard();
             Card secondCard3 = tempNode7.getCard();
             Card secondCard4 = tempNode8.getCard();
-            
             System.out.println("\n----- Round 2: \n");
             playOrder(roundWinner, secondCard1, secondCard2, secondCard3,secondCard4); //prints starting hands
             System.out.println("\nCards on Table: " + tableQueue + "\n");
@@ -91,7 +89,8 @@ public class menuClient {
             int roundWinner2 = findWinner(winningCard2, secondCard1,secondCard2,secondCard3,secondCard4);  //returns players object
             clearTable(tableQueue);
             
-      /* ---------------------------------------------------
+      //------------------------ round 3
+            
             QNode tempNode9 = player1.peek();   //prints first variable
             QNode tempNode10 = player2.peek();
             QNode tempNode11 = player3.peek();
@@ -100,35 +99,14 @@ public class menuClient {
             Card thirdCard2 = tempNode10.getCard();
             Card thirdCard3 = tempNode11.getCard();
             Card thirdCard4 = tempNode12.getCard();
+            System.out.println("\n----- Round 3: \n");
+            playOrder(roundWinner2, thirdCard1,thirdCard2,thirdCard3,thirdCard4); //prints starting hands
+            System.out.println("\nCards on Table: " + tableQueue + "\n");
+            Card winningCard3 = findWinningCard(thirdCard1,thirdCard2,thirdCard3,thirdCard4);  //returns card obj
+            int roundWinner3 = findWinner(winningCard3, thirdCard1,thirdCard2,thirdCard3,thirdCard4);  //returns players object
+            clearTable(tableQueue);
       
-            
-           System.out.println("\n-----Round 3: \n");
-            System.out.println("Player1's hand:  " + thirdCard1 + player1.toString()); //prints hands
-            System.out.println("Player2's hand:  " + thirdCard2 + player2.toString());
-            System.out.println("Player3's hand:  " + thirdCard3 + player3.toString());
-            System.out.println("Player4's hand:  " + thirdCard4 + player4.toString());
-      
-            tableQueue.addQueue(thirdCard1); tableQueue.addQueue(thirdCard2); tableQueue.addQueue(thirdCard3); tableQueue.addQueue(thirdCard4);
-            player1.deQueue();player2.deQueue();player3.deQueue();player4.deQueue();
-            System.out.println("\ntable 3 : " + tableQueue + "\n");
-      
-           
-      
-            Card winningCard3 = findWinningCard(thirdCard1,thirdCard2,thirdCard3,thirdCard4);
-            System.out.println("Winner: " + winningCard3 );
-      
-            if (winningCard3==fourthCard1){
-                  player1.addQueue(fourthCard1); player1.addQueue(fourthCard2); player1.addQueue(fourthCard3); player1.addQueue(fourthCard4);
-            } else if (winningCard3==fourthCard2) {
-                  player2.addQueue(fourthCard1); player2.addQueue(fourthCard2); player2.addQueue(fourthCard3); player2.addQueue(fourthCard4);
-            } else if (winningCard3==fourthCard3) {
-                  player3.addQueue(fourthCard1); player3.addQueue(fourthCard2); player3.addQueue(fourthCard3); player3.addQueue(fourthCard4);
-            } else {
-                  player4.addQueue(fourthCard1); player4.addQueue(fourthCard2); player4.addQueue(fourthCard3); player4.addQueue(fourthCard4);
-            }
-            tableQueue.deQueue();tableQueue.deQueue();tableQueue.deQueue();tableQueue.deQueue();
-      
-      // ---------------------------------------------------
+      //------------------------ round 4
       
             QNode thirdNode9 = player1.peek();   //prints first variable
             QNode thirdNode10 = player2.peek();
@@ -139,69 +117,32 @@ public class menuClient {
             Card fourthCard3 = thirdNode11.getCard();
             Card fourthCard4 = thirdNode12.getCard();
       
-            System.out.println("\n-----Round 4: \n");
-            System.out.println("Player1's hand:  " + fourthCard1 + player1.toString()); //prints hands
-            System.out.println("Player2's hand:  " + fourthCard2 + player2.toString());
-            System.out.println("Player3's hand:  " + fourthCard3 + player3.toString());
-            System.out.println("Player4's hand:  " + fourthCard4 + player4.toString());
+            System.out.println("\n----- Round 4: \n");
+            playOrder(roundWinner2, fourthCard1,fourthCard2,fourthCard3,fourthCard4); //prints starting hands
+            System.out.println("\nCards on Table: " + tableQueue + "\n");
+            Card winningCard4 = findWinningCard(fourthCard1,fourthCard2,fourthCard3,fourthCard4);  //returns card obj
+            int roundWinner4 = findWinner(winningCard3, fourthCard1,fourthCard2,fourthCard3,fourthCard4);  //returns players object
+            clearTable(tableQueue);
       
-            tableQueue.addQueue(fourthCard1); tableQueue.addQueue(fourthCard2); tableQueue.addQueue(fourthCard3); tableQueue.addQueue(fourthCard4);
-            player1.deQueue();player2.deQueue();player3.deQueue();player4.deQueue();
-            System.out.println("\ntable 3 : " + tableQueue + "\n");
-      
-            
-      
-            Card winningCard4 = findWinningCard(fourthCard1,fourthCard2,fourthCard3,fourthCard4);
-            System.out.println("Winner: " + winningCard4 );
-      
-            if (winningCard4==fourthCard1){
-                  player1.addQueue(fourthCard5); player1.addQueue(fourthCard6); player1.addQueue(fourthCard7); player1.addQueue(fourthCard8);
-            } else if (winningCard4==fourthCard2) {
-                  player2.addQueue(fourthCard5); player2.addQueue(fourthCard6); player2.addQueue(fourthCard7); player2.addQueue(fourthCard8);
-            } else if (winningCard4==fourthCard3) {
-                  player3.addQueue(fourthCard5); player3.addQueue(fourthCard6); player3.addQueue(fourthCard7); player3.addQueue(fourthCard8);
-            } else {
-                  player4.addQueue(fourthCard5); player4.addQueue(fourthCard6); player4.addQueue(fourthCard8); player4.addQueue(fourthCard8);
-            }
-            tableQueue.deQueue();tableQueue.deQueue();tableQueue.deQueue();tableQueue.deQueue();
-      
-      // ---------------------------------------------------
+      //------------------------ round 5
       
             QNode thirdNode1 = player1.peek();   //prints first variable
             QNode thirdNode2 = player2.peek();
             QNode thirdNode3 = player3.peek();
             QNode thirdNode4 = player4.peek();
-            Card fourthCard5 = thirdNode1.getCard();
-            Card fourthCard6 = thirdNode2.getCard();
-            Card fourthCard7 = thirdNode3.getCard();
-            Card fourthCard8 = thirdNode4.getCard();
+            Card fifthCard5 = thirdNode1.getCard();
+            Card fifthCard6 = thirdNode2.getCard();
+            Card fifthCard7 = thirdNode3.getCard();
+            Card fifthCard8 = thirdNode4.getCard();
             
             System.out.println("\n-----Round 5: \n");
-            System.out.println("Player1's hand:  " + fourthCard1 + player1.toString()); //prints hands
-            System.out.println("Player2's hand:  " + fourthCard2 + player2.toString());
-            System.out.println("Player3's hand:  " + fourthCard3 + player3.toString());
-            System.out.println("Player4's hand:  " + fourthCard4 + player4.toString());
+            playOrder(roundWinner2, fourthCard1,fourthCard2,fourthCard3,fourthCard4); //prints starting hands
+            System.out.println("\nCards on Table: " + tableQueue + "\n");
+            Card winningCard4 = findWinningCard(fourthCard1,fourthCard2,fourthCard3,fourthCard4);  //returns card obj
+            int roundWinner4 = findWinner(winningCard3, fourthCard1,fourthCard2,fourthCard3,fourthCard4);  //returns players object
+            clearTable(tableQueue);
       
-            tableQueue.addQueue(fourthCard1); tableQueue.addQueue(fourthCard2); tableQueue.addQueue(fourthCard3); tableQueue.addQueue(fourthCard4);
-            player1.deQueue();player2.deQueue();player3.deQueue();player4.deQueue();
-            System.out.println("\ntable 3 : " + tableQueue + "\n");
-      
-            
-      
-            Card winningCard5 = findWinningCard(fourth5,fourth6,fourth7,fourth8);
-            System.out.println("Winner: " + winningCard5 );
-      
-            if (winningCard5==fourth5){
-                  player1.addQueue(fourth5); player1.addQueue(fourth6); player1.addQueue(fourth7); player1.addQueue(fourth8);
-            } else if (winningCard5==fourth6) {
-                  player2.addQueue(fourth5); player2.addQueue(fourth6); player2.addQueue(fourth7); player2.addQueue(fourth8);
-            } else if (winningCard5==fourth7) {
-                  player3.addQueue(fourth5); player3.addQueue(fourth6); player3.addQueue(fourth7); player3.addQueue(fourth8);
-            } else {
-                  player4.addQueue(fourth5); player4.addQueue(fourth6); player4.addQueue(fourth8); player4.addQueue(fourth8);
-            }
-            tableQueue.deQueue();tableQueue.deQueue();tableQueue.deQueue();tableQueue.deQueue();
-            //----round 6
+      //------------------------ round 6
             QNode fourthNode1 = player1.peek();   //prints first variable
             QNode fourthNode2 = player2.peek();
             QNode fourthNode3 = player3.peek();
