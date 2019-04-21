@@ -5,7 +5,6 @@
 import java.util.Random;
 
 public class menuClient {
-      static Queue[] playersArray;  // array holds players
       static Queue player1 = new Queue();   //change to QUEUE or use only QUEUE methods
       static Queue player2 = new Queue();   //change to QUEUE or use only QUEUE methods
       static Queue player3 = new Queue();   //change to QUEUE or use only QUEUE methods
@@ -27,12 +26,11 @@ public class menuClient {
                   Card nullCard = new Card();
             
                   //grabs only 4
-                  //nullCard.setCardPlayerName(playersArray[i].getName());
+                  
                   String pName = nullCard.getCardPlayerName();
                   
                   tempQ.addQueue(nullCard);
-                  //fills first nodes in queues with null values
-                  //System.out.println("null hands: " + playersArray[i%4] + i + playersArray[i]);
+                  
             }
             
             
@@ -43,7 +41,7 @@ public class menuClient {
             Players playerObj3 = new Players("Player3");
             Players playerObj4 = new Players("Player4");*/
             
-            playersArray = new Queue[]{player1, player2, player3, player4};
+            
       
             //System.out.println("Player1's hand: " + d.get(0) + " | " + d.get(1) + " | " + d.get(2) + " | " + d.get(3) + "\n\t |" + d.get(4) + " | " + d.get(5) + " | " + d.get(6) + " | " + d.get(7) + "\n\t | " + d.get(8) + " | " + d.get(9) + " | " + d.get(10) + " | " + d.get(11) + " | " + d.get(12));
             player1.addQueue(d.get(0)); player1.addQueue(d.get(1)); player1.addQueue(d.get(2)); player1.addQueue(d.get(3));player1.addQueue(d.get(4)); player1.addQueue(d.get(5)); player1.addQueue(d.get(6)); player1.addQueue(d.get(7));player1.addQueue(d.get(8)); player1.addQueue(d.get(9)); player1.addQueue(d.get(10)); player1.addQueue(d.get(11));player1.addQueue(d.get(12));
@@ -124,10 +122,9 @@ public class menuClient {
             //**********************************
             
             clearTable(tableQueue);
-            System.out.println("\nTable : " + tableQueue + "\n");
             
-            player1.deQueue(); player2.deQueue(); player3.deQueue(); player4.deQueue();
-            
+            /*player1.deQueue(); player2.deQueue(); player3.deQueue(); player4.deQueue();
+            player1.deQueue(); player2.deQueue(); player3.deQueue(); player4.deQueue();*/
             
 /* ---------------------------------------------------
             
