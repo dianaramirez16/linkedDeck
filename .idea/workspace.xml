@@ -19,12 +19,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/menuClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="263" column="31" lean-forward="true" selection-start-line="263" selection-start-column="31" selection-end-line="263" selection-end-column="31" />
+            <state relative-caret-position="552">
+              <caret line="227" column="26" selection-start-line="227" selection-start-column="26" selection-end-line="227" selection-end-column="26" />
               <folding>
                 <element signature="method#dealCards#0;class#menuClient#0" />
+                <element signature="method#playOrder#0;class#menuClient#0" />
                 <element signature="method#findWinner#0;class#menuClient#0" />
                 <element signature="method#findWinner#0;class#menuClient#0" />
+                <element signature="method#clearTable#0;class#menuClient#0" />
               </folding>
             </state>
           </provider>
@@ -419,12 +421,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/menuClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="263" column="31" lean-forward="true" selection-start-line="263" selection-start-column="31" selection-end-line="263" selection-end-column="31" />
+        <state relative-caret-position="552">
+          <caret line="227" column="26" selection-start-line="227" selection-start-column="26" selection-end-line="227" selection-end-column="26" />
           <folding>
             <element signature="method#dealCards#0;class#menuClient#0" />
+            <element signature="method#playOrder#0;class#menuClient#0" />
             <element signature="method#findWinner#0;class#menuClient#0" />
             <element signature="method#findWinner#0;class#menuClient#0" />
+            <element signature="method#clearTable#0;class#menuClient#0" />
           </folding>
         </state>
       </provider>
