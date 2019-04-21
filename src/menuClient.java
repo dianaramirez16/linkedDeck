@@ -46,10 +46,8 @@ public class menuClient {
       
       
       public static void startGame(){
-            
             Card nullCard = new Card();
             tableQueue.addQueue(nullCard);
-      
             System.out.println("\n\n\n");
             System.out.println("Let's play a game.");
             Random rand = new Random();
@@ -73,10 +71,7 @@ public class menuClient {
             
             
             //add cards to table queue
-            tableQueue.addQueue(firstCard1); player1.deQueue();
-            tableQueue.addQueue(firstCard2); player2.deQueue();
-            tableQueue.addQueue(firstCard3); player3.deQueue();
-            tableQueue.addQueue(firstCard4); player4.deQueue();
+            
             
             System.out.println("\nTable : " + tableQueue + "\n");
             Card winningCard1 = findWinningCard(firstCard1,firstCard2,firstCard3,firstCard4);  //returns card obj
@@ -246,22 +241,45 @@ public class menuClient {
                   System.out.println("Player2 goes next:  " + c2 + player2.toString());
                   System.out.println("Player3 goes third:  " + c3 + player3.toString());
                   System.out.println("Player4 goes last:  " + c4 + player4.toString());
+                  tableQueue.addQueue(c1); player1.deQueue();
+                  tableQueue.addQueue(c2); player2.deQueue();
+                  tableQueue.addQueue(c3); player3.deQueue();
+                  tableQueue.addQueue(c4); player4.deQueue();
             } else if (o==2) {
                   System.out.println("Player2 goes first:  " + c2 + player2.toString());
                   System.out.println("Player3 goes next:  " + c3 + player3.toString());
                   System.out.println("Player4 goes third:  " + c4 + player4.toString());
                   System.out.println("Player1 goes last:  " + c1 + player1.toString());
+                  tableQueue.addQueue(c2); player2.deQueue();
+                  tableQueue.addQueue(c3); player3.deQueue();
+                  tableQueue.addQueue(c4); player4.deQueue();
+                  tableQueue.addQueue(c1); player1.deQueue();
             } else if (o==3) {
                   System.out.println("Player3 goes first:  " + c3 + player3.toString());
                   System.out.println("Player4 goes next:  " + c4 + player4.toString());
                   System.out.println("Player1 goes third:  " + c1 + player1.toString());
                   System.out.println("Player2 goes last:  " + c2 + player2.toString());
+                  
+                  tableQueue.addQueue(c3); player3.deQueue();
+                  tableQueue.addQueue(c4); player4.deQueue();
+                  tableQueue.addQueue(c1); player1.deQueue();
+                  tableQueue.addQueue(c2); player2.deQueue();
             } else {
                   System.out.println("Player4 goes first:  " + c4 + player4.toString());
                   System.out.println("Player1 goes next:  " + c1 + player1.toString());
                   System.out.println("Player2 goes third:  " + c2 + player2.toString());
                   System.out.println("Player3 goes last:  " + c3 + player3.toString());
+                  tableQueue.addQueue(c4); player4.deQueue();
+                  tableQueue.addQueue(c1); player1.deQueue();
+                  tableQueue.addQueue(c2); player2.deQueue();
+                  tableQueue.addQueue(c3); player3.deQueue();
             }
+      
+            tableQueue.addQueue(c1); player1.deQueue();
+            tableQueue.addQueue(c2); player2.deQueue();
+            tableQueue.addQueue(c3); player3.deQueue();
+            tableQueue.addQueue(c4); player4.deQueue();
+            
       }
       
       
