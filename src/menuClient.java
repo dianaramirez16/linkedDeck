@@ -274,11 +274,6 @@ public class menuClient {
                   tableQueue.addQueue(c2); player2.deQueue();
                   tableQueue.addQueue(c3); player3.deQueue();
             }
-      
-            tableQueue.addQueue(c1); player1.deQueue();
-            tableQueue.addQueue(c2); player2.deQueue();
-            tableQueue.addQueue(c3); player3.deQueue();
-            tableQueue.addQueue(c4); player4.deQueue();
             
       }
       
