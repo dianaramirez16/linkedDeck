@@ -118,10 +118,10 @@ public class menuClient {
             Card fourthCard4 = thirdNode12.getCard();
       
             System.out.println("\n----- Round 4: \n");
-            playOrder(roundWinner2, fourthCard1,fourthCard2,fourthCard3,fourthCard4); //prints starting hands
+            playOrder(roundWinner3, fourthCard1,fourthCard2,fourthCard3,fourthCard4); //prints starting hands
             System.out.println("\nCards on Table: " + tableQueue + "\n");
             Card winningCard4 = findWinningCard(fourthCard1,fourthCard2,fourthCard3,fourthCard4);  //returns card obj
-            int roundWinner4 = findWinner(winningCard3, fourthCard1,fourthCard2,fourthCard3,fourthCard4);  //returns players object
+            int roundWinner4 = findWinner(winningCard4, fourthCard1,fourthCard2,fourthCard3,fourthCard4);  //returns players object
             clearTable(tableQueue);
       
       //------------------------ round 5
@@ -130,16 +130,16 @@ public class menuClient {
             QNode thirdNode2 = player2.peek();
             QNode thirdNode3 = player3.peek();
             QNode thirdNode4 = player4.peek();
-            Card fifthCard5 = thirdNode1.getCard();
-            Card fifthCard6 = thirdNode2.getCard();
-            Card fifthCard7 = thirdNode3.getCard();
-            Card fifthCard8 = thirdNode4.getCard();
+            Card fifthCard1 = thirdNode1.getCard();
+            Card fifthCard2 = thirdNode2.getCard();
+            Card fifthCard3 = thirdNode3.getCard();
+            Card fifthCard4 = thirdNode4.getCard();
             
             System.out.println("\n-----Round 5: \n");
-            playOrder(roundWinner2, fourthCard1,fourthCard2,fourthCard3,fourthCard4); //prints starting hands
+            playOrder(roundWinner4, fifthCard1,fifthCard2,fifthCard3,fifthCard4); //prints starting hands
             System.out.println("\nCards on Table: " + tableQueue + "\n");
-            Card winningCard4 = findWinningCard(fourthCard1,fourthCard2,fourthCard3,fourthCard4);  //returns card obj
-            int roundWinner4 = findWinner(winningCard3, fourthCard1,fourthCard2,fourthCard3,fourthCard4);  //returns players object
+            Card winningCard5 = findWinningCard(fifthCard1,fifthCard2,fifthCard3,fifthCard4);  //returns card obj
+            int roundWinner5 = findWinner(winningCard5, fifthCard1,fifthCard2,fifthCard3,fifthCard4);  //returns players object
             clearTable(tableQueue);
       
       //------------------------ round 6
