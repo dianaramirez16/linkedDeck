@@ -19,12 +19,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/menuClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="227" column="26" selection-start-line="227" selection-start-column="26" selection-end-line="227" selection-end-column="26" />
+            <state relative-caret-position="544">
+              <caret line="109" column="13" lean-forward="true" selection-start-line="109" selection-start-column="13" selection-end-line="109" selection-end-column="13" />
               <folding>
                 <element signature="method#dealCards#0;class#menuClient#0" />
                 <element signature="method#playOrder#0;class#menuClient#0" />
-                <element signature="method#findWinner#0;class#menuClient#0" />
                 <element signature="method#findWinner#0;class#menuClient#0" />
                 <element signature="method#clearTable#0;class#menuClient#0" />
               </folding>
@@ -35,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Players.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="323">
+              <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
               <folding>
                 <element signature="e#0#1185#0" expanded="true" />
               </folding>
@@ -56,7 +55,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>obj</find>
       <find>@Override</find>
       <find>myStack</find>
       <find>reallocate</find>
@@ -86,6 +84,7 @@
       <find>playersArray</find>
       <find>FOUR of DIAMONDS</find>
       <find>winner:</find>
+      <find>playOrder</find>
     </findStrings>
     <replaceStrings>
       <replace>CircularQueue</replace>
@@ -411,8 +410,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Players.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        <state relative-caret-position="323">
+          <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
           <folding>
             <element signature="e#0#1185#0" expanded="true" />
           </folding>
@@ -421,12 +420,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/menuClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="227" column="26" selection-start-line="227" selection-start-column="26" selection-end-line="227" selection-end-column="26" />
+        <state relative-caret-position="544">
+          <caret line="109" column="13" lean-forward="true" selection-start-line="109" selection-start-column="13" selection-end-line="109" selection-end-column="13" />
           <folding>
             <element signature="method#dealCards#0;class#menuClient#0" />
             <element signature="method#playOrder#0;class#menuClient#0" />
-            <element signature="method#findWinner#0;class#menuClient#0" />
             <element signature="method#findWinner#0;class#menuClient#0" />
             <element signature="method#clearTable#0;class#menuClient#0" />
           </folding>

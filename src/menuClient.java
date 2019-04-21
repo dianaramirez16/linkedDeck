@@ -70,10 +70,10 @@ public class menuClient {
             playOrder(randomPlayer, firstCard1, firstCard2, firstCard3, firstCard4); //prints starting hands
             System.out.println("\nTable : " + tableQueue + "\n");
             Card winningCard1 = findWinningCard(firstCard1,firstCard2,firstCard3,firstCard4);  //returns card obj
-            Players tempWinner = findWinner(winningCard1, firstCard1, firstCard2, firstCard3,firstCard4);  //returns players object
+            int roundWinner = findWinner(winningCard1, firstCard1, firstCard2, firstCard3,firstCard4);  //returns players object
             clearTable(tableQueue);
             
- --------------------------------------------------- round 2
+      /*------------------------ round 2
 
             QNode tempNode5 = player1.peek();   //prints first variable
             QNode tempNode6 = player2.peek();
@@ -85,11 +85,6 @@ public class menuClient {
             Card secondCard4 = tempNode8.getCard();
             
             System.out.println("\n-----Round 2: \n");
-            playOrder(randomPlayer, firstCard1, firstCard2, firstCard3, firstCard4); //prints starting hands
-            System.out.println("\nTable : " + tableQueue + "\n");
-            Card winningCard1 = findWinningCard(firstCard1,firstCard2,firstCard3,firstCard4);  //returns card obj
-            Players tempWinner = findWinner(winningCard1, firstCard1, firstCard2, firstCard3,firstCard4);  //returns players object
-            clearTable(tableQueue);
             
             System.out.println("Player1's hand:  " + secondCard1 + player1.toString()); //prints hands
             System.out.println("Player2's hand:  " + secondCard2 + player2.toString());
@@ -115,7 +110,7 @@ public class menuClient {
             }
             tableQueue.deQueue();tableQueue.deQueue();tableQueue.deQueue();tableQueue.deQueue();
             
-      /* ---------------------------------------------------
+      // ---------------------------------------------------
             QNode tempNode9 = player1.peek();   //prints first variable
             QNode tempNode10 = player2.peek();
             QNode tempNode11 = player3.peek();
@@ -225,7 +220,7 @@ public class menuClient {
                   player4.addQueue(fourth5); player4.addQueue(fourth6); player4.addQueue(fourth8); player4.addQueue(fourth8);
             }
             tableQueue.deQueue();tableQueue.deQueue();tableQueue.deQueue();tableQueue.deQueue();
-            //----round 6 
+            //----round 6
             QNode fourthNode1 = player1.peek();   //prints first variable
             QNode fourthNode2 = player2.peek();
             QNode fourthNode3 = player3.peek();
@@ -284,27 +279,30 @@ public class menuClient {
             
       }
       
-      public static Players findWinner(Card winningCard1, Card c1, Card c2, Card c3, Card c4){
+      public static int findWinner(Card winningCard1, Card c1, Card c2, Card c3, Card c4){
             // new method for finding winner should accept winning card, and cards played in that round
             // should return winner name: String
-            Players winningPlayer = new Players("Winner");
             
             if (winningCard1==c1){
                   player1.addQueue(c1); player1.addQueue(c2); player1.addQueue(c3); player1.addQueue(c4);
-                  winningPlayer.setName("Player1 with " + winningCard1);
+                  System.out.println("WINNER : Player1 with " + winningCard1);
+                  return 1;
             } else if (winningCard1==c2) {
                   player2.addQueue(c1); player2.addQueue(c2); player2.addQueue(c3); player2.addQueue(c4);
-                  winningPlayer.setName("Player2 with " + winningCard1);
+                  System.out.println("WINNER : Player2 with " + winningCard1);
+                  return 2;
             } else if (winningCard1==c3) {
                   player3.addQueue(c1); player3.addQueue(c2); player3.addQueue(c3); player3.addQueue(c4);
-                  winningPlayer.setName("Player3 with " + winningCard1);
+                  System.out.println("WINNER : Player3 with " + winningCard1);
+                  return 3;
             } else {
                   player4.addQueue(c1); player4.addQueue(c2); player4.addQueue(c3); player4.addQueue(c4);
-                  winningPlayer.setName("Player4 with " + winningCard1);
+                  System.out.println("WINNER : Player4 with " + winningCard1);
+                  return 4;
             }
       
-            System.out.println("WINNER : " + winningPlayer.getName());  //print winner name
-            return winningPlayer;
+            
+            
       }
       
       public static Card findWinningCard(Card card1, Card card2, Card card3, Card card4) {
