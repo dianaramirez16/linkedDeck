@@ -25,6 +25,7 @@ public class Queue {
             
             this.rear.next=temp;    //add to end of queue
             this.rear = temp;       //set rear pointer to temp
+            size++;
       }
       
       
@@ -40,6 +41,7 @@ public class Queue {
             //update pointers if queue is ever empty again
             if (this.front ==null)
                   this.rear = null;
+            size--;
             return temp;            //return deleted element
       }
       
