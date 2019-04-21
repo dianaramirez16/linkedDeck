@@ -69,7 +69,7 @@ public class menuClient {
             playOrder(randomPlayer, firstCard1, firstCard2, firstCard3, firstCard4); //prints starting hands
             System.out.println("\nCards on Table: " + tableQueue + "\n");
             Card winningCard1 = findWinningCard(firstCard1,firstCard2,firstCard3,firstCard4);  //returns card obj
-            int roundWinner = findWinner(winningCard1, firstCard1, firstCard2, firstCard3,firstCard4);  //returns players object
+            int roundWinner1 = findWinner(winningCard1, firstCard1, firstCard2, firstCard3,firstCard4);  //returns players object
             clearTable(tableQueue);
             
       //------------------------ round 2
@@ -83,7 +83,7 @@ public class menuClient {
             Card secondCard3 = tempNode7.getCard();
             Card secondCard4 = tempNode8.getCard();
             System.out.println("\n----- Round 2: \n");
-            playOrder(roundWinner, secondCard1, secondCard2, secondCard3,secondCard4); //prints starting hands
+            playOrder(roundWinner1, secondCard1, secondCard2, secondCard3,secondCard4); //prints starting hands
             System.out.println("\nCards on Table: " + tableQueue + "\n");
             Card winningCard2 = findWinningCard(secondCard1,secondCard2,secondCard3,secondCard4);  //returns card obj
             int roundWinner2 = findWinner(winningCard2, secondCard1,secondCard2,secondCard3,secondCard4);  //returns players object
@@ -135,7 +135,7 @@ public class menuClient {
             Card fifthCard3 = thirdNode3.getCard();
             Card fifthCard4 = thirdNode4.getCard();
             
-            System.out.println("\n-----Round 5: \n");
+            System.out.println("\n----- Round 5: \n");
             playOrder(roundWinner4, fifthCard1,fifthCard2,fifthCard3,fifthCard4); //prints starting hands
             System.out.println("\nCards on Table: " + tableQueue + "\n");
             Card winningCard5 = findWinningCard(fifthCard1,fifthCard2,fifthCard3,fifthCard4);  //returns card obj
@@ -147,13 +147,171 @@ public class menuClient {
             QNode fourthNode2 = player2.peek();
             QNode fourthNode3 = player3.peek();
             QNode fourthNode4 = player4.peek();
-            Card fourth5 = fourthNode1.getCard();
-            Card fourth6 = fourthNode2.getCard();
-            Card fourth7 = fourthNode3.getCard();
-            Card fourth8 = fourthNode4.getCard();
-      */
+            Card sixthCard5 = fourthNode1.getCard();
+            Card sixthCard6 = fourthNode2.getCard();
+            Card sixthCard7 = fourthNode3.getCard();
+            Card sixthCard8 = fourthNode4.getCard();
+            
+            System.out.println("\n----- Round 5: \n");
+            playOrder(roundWinner5, sixthCard5,sixthCard6,sixthCard7,sixthCard8); //prints starting hands
+            System.out.println("\nCards on Table: " + tableQueue + "\n");
+            Card winningCard6 = findWinningCard(sixthCard5,sixthCard6,sixthCard7,sixthCard8);  //returns card obj
+            int roundWinner6 = findWinner(winningCard6, sixthCard5,sixthCard6,sixthCard7,sixthCard8);  //returns players object
+            clearTable(tableQueue);
+            
+      //------------------------ round 7
+            QNode fourthNode1 = player1.peek();   //prints first variable
+            QNode fourthNode2 = player2.peek();
+            QNode fourthNode3 = player3.peek();
+            QNode fourthNode4 = player4.peek();
+            Card sixthCard5 = fourthNode1.getCard();
+            Card sixthCard6 = fourthNode2.getCard();
+            Card sixthCard7 = fourthNode3.getCard();
+            Card sixthCard8 = fourthNode4.getCard();
       
+            System.out.println("\n----- Round 5: \n");
+            playOrder(roundWinner5, sixthCard5,sixthCard6,sixthCard7,sixthCard8); //prints starting hands
+            System.out.println("\nCards on Table: " + tableQueue + "\n");
+            Card winningCard6 = findWinningCard(sixthCard5,sixthCard6,sixthCard7,sixthCard8);  //returns card obj
+            int roundWinner6 = findWinner(winningCard6, sixthCard5,sixthCard6,sixthCard7,sixthCard8);  //returns players object
+            clearTable(tableQueue);
       
+      //------------------------ round 8
+            QNode fourthNode1 = player1.peek();   //prints first variable
+            QNode fourthNode2 = player2.peek();
+            QNode fourthNode3 = player3.peek();
+            QNode fourthNode4 = player4.peek();
+            Card sixthCard5 = fourthNode1.getCard();
+            Card sixthCard6 = fourthNode2.getCard();
+            Card sixthCard7 = fourthNode3.getCard();
+            Card sixthCard8 = fourthNode4.getCard();
+      
+            System.out.println("\n----- Round 5: \n");
+            playOrder(roundWinner5, sixthCard5,sixthCard6,sixthCard7,sixthCard8); //prints starting hands
+            System.out.println("\nCards on Table: " + tableQueue + "\n");
+            Card winningCard6 = findWinningCard(sixthCard5,sixthCard6,sixthCard7,sixthCard8);  //returns card obj
+            int roundWinner6 = findWinner(winningCard6, sixthCard5,sixthCard6,sixthCard7,sixthCard8);  //returns players object
+            clearTable(tableQueue);
+      
+      //------------------------ round 9
+            QNode fourthNode1 = player1.peek();   //prints first variable
+            QNode fourthNode2 = player2.peek();
+            QNode fourthNode3 = player3.peek();
+            QNode fourthNode4 = player4.peek();
+            Card sixthCard5 = fourthNode1.getCard();
+            Card sixthCard6 = fourthNode2.getCard();
+            Card sixthCard7 = fourthNode3.getCard();
+            Card sixthCard8 = fourthNode4.getCard();
+      
+            System.out.println("\n----- Round 5: \n");
+            playOrder(roundWinner5, sixthCard5,sixthCard6,sixthCard7,sixthCard8); //prints starting hands
+            System.out.println("\nCards on Table: " + tableQueue + "\n");
+            Card winningCard6 = findWinningCard(sixthCard5,sixthCard6,sixthCard7,sixthCard8);  //returns card obj
+            int roundWinner6 = findWinner(winningCard6, sixthCard5,sixthCard6,sixthCard7,sixthCard8);  //returns players object
+            clearTable(tableQueue);
+      
+      //------------------------ round 10
+            QNode fourthNode1 = player1.peek();   //prints first variable
+            QNode fourthNode2 = player2.peek();
+            QNode fourthNode3 = player3.peek();
+            QNode fourthNode4 = player4.peek();
+            Card sixthCard5 = fourthNode1.getCard();
+            Card sixthCard6 = fourthNode2.getCard();
+            Card sixthCard7 = fourthNode3.getCard();
+            Card sixthCard8 = fourthNode4.getCard();
+      
+            System.out.println("\n----- Round 5: \n");
+            playOrder(roundWinner5, sixthCard5,sixthCard6,sixthCard7,sixthCard8); //prints starting hands
+            System.out.println("\nCards on Table: " + tableQueue + "\n");
+            Card winningCard6 = findWinningCard(sixthCard5,sixthCard6,sixthCard7,sixthCard8);  //returns card obj
+            int roundWinner6 = findWinner(winningCard6, sixthCard5,sixthCard6,sixthCard7,sixthCard8);  //returns players object
+            clearTable(tableQueue);
+      
+      //------------------------ round 11
+            QNode fourthNode1 = player1.peek();   //prints first variable
+            QNode fourthNode2 = player2.peek();
+            QNode fourthNode3 = player3.peek();
+            QNode fourthNode4 = player4.peek();
+            Card sixthCard5 = fourthNode1.getCard();
+            Card sixthCard6 = fourthNode2.getCard();
+            Card sixthCard7 = fourthNode3.getCard();
+            Card sixthCard8 = fourthNode4.getCard();
+      
+            System.out.println("\n----- Round 5: \n");
+            playOrder(roundWinner5, sixthCard5,sixthCard6,sixthCard7,sixthCard8); //prints starting hands
+            System.out.println("\nCards on Table: " + tableQueue + "\n");
+            Card winningCard6 = findWinningCard(sixthCard5,sixthCard6,sixthCard7,sixthCard8);  //returns card obj
+            int roundWinner6 = findWinner(winningCard6, sixthCard5,sixthCard6,sixthCard7,sixthCard8);  //returns players object
+            clearTable(tableQueue);
+      
+      //------------------------ round 12
+            QNode fourthNode1 = player1.peek();   //prints first variable
+            QNode fourthNode2 = player2.peek();
+            QNode fourthNode3 = player3.peek();
+            QNode fourthNode4 = player4.peek();
+            Card sixthCard5 = fourthNode1.getCard();
+            Card sixthCard6 = fourthNode2.getCard();
+            Card sixthCard7 = fourthNode3.getCard();
+            Card sixthCard8 = fourthNode4.getCard();
+      
+            System.out.println("\n----- Round 5: \n");
+            playOrder(roundWinner5, sixthCard5,sixthCard6,sixthCard7,sixthCard8); //prints starting hands
+            System.out.println("\nCards on Table: " + tableQueue + "\n");
+            Card winningCard6 = findWinningCard(sixthCard5,sixthCard6,sixthCard7,sixthCard8);  //returns card obj
+            int roundWinner6 = findWinner(winningCard6, sixthCard5,sixthCard6,sixthCard7,sixthCard8);  //returns players object
+            clearTable(tableQueue);
+      
+      //------------------------ round 13
+            QNode fourthNode1 = player1.peek();   //prints first variable
+            QNode fourthNode2 = player2.peek();
+            QNode fourthNode3 = player3.peek();
+            QNode fourthNode4 = player4.peek();
+            Card sixthCard5 = fourthNode1.getCard();
+            Card sixthCard6 = fourthNode2.getCard();
+            Card sixthCard7 = fourthNode3.getCard();
+            Card sixthCard8 = fourthNode4.getCard();
+      
+            System.out.println("\n----- Round 5: \n");
+            playOrder(roundWinner5, sixthCard5,sixthCard6,sixthCard7,sixthCard8); //prints starting hands
+            System.out.println("\nCards on Table: " + tableQueue + "\n");
+            Card winningCard6 = findWinningCard(sixthCard5,sixthCard6,sixthCard7,sixthCard8);  //returns card obj
+            int roundWinner6 = findWinner(winningCard6, sixthCard5,sixthCard6,sixthCard7,sixthCard8);  //returns players object
+            clearTable(tableQueue);
+      
+      //------------------------ round 14
+            QNode fourthNode1 = player1.peek();   //prints first variable
+            QNode fourthNode2 = player2.peek();
+            QNode fourthNode3 = player3.peek();
+            QNode fourthNode4 = player4.peek();
+            Card sixthCard5 = fourthNode1.getCard();
+            Card sixthCard6 = fourthNode2.getCard();
+            Card sixthCard7 = fourthNode3.getCard();
+            Card sixthCard8 = fourthNode4.getCard();
+      
+            System.out.println("\n----- Round 5: \n");
+            playOrder(roundWinner5, sixthCard5,sixthCard6,sixthCard7,sixthCard8); //prints starting hands
+            System.out.println("\nCards on Table: " + tableQueue + "\n");
+            Card winningCard6 = findWinningCard(sixthCard5,sixthCard6,sixthCard7,sixthCard8);  //returns card obj
+            int roundWinner6 = findWinner(winningCard6, sixthCard5,sixthCard6,sixthCard7,sixthCard8);  //returns players object
+            clearTable(tableQueue);
+      
+      //------------------------ round 15
+            QNode fourthNode1 = player1.peek();   //prints first variable
+            QNode fourthNode2 = player2.peek();
+            QNode fourthNode3 = player3.peek();
+            QNode fourthNode4 = player4.peek();
+            Card sixthCard5 = fourthNode1.getCard();
+            Card sixthCard6 = fourthNode2.getCard();
+            Card sixthCard7 = fourthNode3.getCard();
+            Card sixthCard8 = fourthNode4.getCard();
+      
+            System.out.println("\n----- Round 5: \n");
+            playOrder(roundWinner5, sixthCard5,sixthCard6,sixthCard7,sixthCard8); //prints starting hands
+            System.out.println("\nCards on Table: " + tableQueue + "\n");
+            Card winningCard6 = findWinningCard(sixthCard5,sixthCard6,sixthCard7,sixthCard8);  //returns card obj
+            int roundWinner6 = findWinner(winningCard6, sixthCard5,sixthCard6,sixthCard7,sixthCard8);  //returns players object
+            clearTable(tableQueue);
+            
       }
       
       
