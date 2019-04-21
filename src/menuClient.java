@@ -103,7 +103,7 @@ public class menuClient {
             //player 4 plays:
             tableQueue.addQueue(firstCard4); player4.deQueue();
             
-            System.out.println("\ntable 1: " + tableQueue + "\n");
+            System.out.println("\nTable : " + tableQueue + "\n");
       
             QNode tempNode5 = player1.peek();   //prints first variable
             QNode tempNode6 = player2.peek();

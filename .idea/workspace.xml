@@ -19,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/menuClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="270" column="8" selection-start-line="270" selection-start-column="8" selection-end-line="270" selection-end-column="8" />
+            <state relative-caret-position="387">
+              <caret line="110" column="45" lean-forward="true" selection-start-line="110" selection-start-column="45" selection-end-line="110" selection-end-column="45" />
               <folding>
                 <element signature="method#dealCards#0;class#menuClient#0" />
                 <element signature="method#findWinner#0;class#menuClient#0" />
@@ -53,7 +53,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>item</find>
       <find>data</find>
       <find>reall</find>
       <find>E</find>
@@ -83,6 +82,7 @@
       <find>firstCard1</find>
       <find>firstCard3</find>
       <find>firstCard4</find>
+      <find>table 1</find>
     </findStrings>
     <replaceStrings>
       <replace>CircularQueue</replace>
@@ -418,8 +418,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/menuClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="270" column="8" selection-start-line="270" selection-start-column="8" selection-end-line="270" selection-end-column="8" />
+        <state relative-caret-position="387">
+          <caret line="110" column="45" lean-forward="true" selection-start-line="110" selection-start-column="45" selection-end-line="110" selection-end-column="45" />
           <folding>
             <element signature="method#dealCards#0;class#menuClient#0" />
             <element signature="method#findWinner#0;class#menuClient#0" />
