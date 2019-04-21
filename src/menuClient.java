@@ -124,6 +124,7 @@ public class menuClient {
             //**********************************
             
             clearTable(tableQueue);
+            System.out.println("\nTable : " + tableQueue + "\n");
             
             player1.deQueue(); player2.deQueue(); player3.deQueue(); player4.deQueue();
             
