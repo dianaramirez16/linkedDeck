@@ -1,5 +1,7 @@
+//deck accessed by main declared as arraylist
 //reference: https://gist.github.com/Rob-bie/b490814b4b7cbb070d58
 //reference: https://howtoprogramwithjava.com/enums/
+//shuffle referenece:  https://www.vogella.com/tutorials/JavaAlgorithmsShuffle/article.html
 // DIANA RAMIREZ
 // PROJECT 3 DATA STRUCTURES
 
