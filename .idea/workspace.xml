@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a79c8f9b-cfbc-4a89-a11a-00d58f4bbd33" name="Default Changelist" comment="changed Stack back to arraylist for future shuffle methods">
-      <change beforePath="$PROJECT_DIR$/src/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Deck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/menuClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menuClient.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/menuClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="115" column="72" selection-start-line="115" selection-start-column="72" selection-end-line="115" selection-end-column="72" />
+            <state relative-caret-position="363">
+              <caret line="91" column="28" selection-start-line="91" selection-start-column="28" selection-end-line="91" selection-end-column="28" />
               <folding>
                 <element signature="method#dealCards#0;class#menuClient#0" />
               </folding>
@@ -53,7 +52,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>arrayClass</find>
       <find>CircularQueue</find>
       <find>int</find>
       <find>Object</find>
@@ -83,6 +81,7 @@
       <find>enQueue</find>
       <find>third</find>
       <find>KING of DIAMONDS</find>
+      <find>findWinner</find>
     </findStrings>
     <replaceStrings>
       <replace>CircularQueue</replace>
@@ -98,6 +97,7 @@
       <replace>addQueue</replace>
       <replace>fourth</replace>
       <replace>fourthCard5</replace>
+      <replace>findWinningCard</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -413,8 +413,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/menuClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="115" column="72" selection-start-line="115" selection-start-column="72" selection-end-line="115" selection-end-column="72" />
+        <state relative-caret-position="363">
+          <caret line="91" column="28" selection-start-line="91" selection-start-column="28" selection-end-line="91" selection-end-column="28" />
           <folding>
             <element signature="method#dealCards#0;class#menuClient#0" />
           </folding>

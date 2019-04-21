@@ -85,6 +85,12 @@ public class menuClient {
             System.out.println("Player3's hand:  " + firstCard3 + player3.toString());
             System.out.println("Player4's hand:  " + firstCard4 + player4.toString());
             
+            
+            //need to create method to notate who played and in what order they played
+            //method should accept int, denoting order of play
+            //method can also print tablequeue contents, setupTable, or playRound
+            //return is void
+            
             //player 1 plays
             tableQueue.addQueue(firstCard1); player1.deQueue();
             
@@ -110,6 +116,9 @@ public class menuClient {
       
             Card winningCard1 = findWinningCard(firstCard1,firstCard2,firstCard3,firstCard4);
             Players winningPlayer = new Players("Winner");
+      
+            // new method for finding winner should accept winning card, and cards played in that round
+            // should return winner name: String
             
             if (winningCard1==firstCard1){
                   player1.addQueue(firstCard1); player1.addQueue(firstCard2); player1.addQueue(firstCard3); player1.addQueue(firstCard4);
@@ -153,7 +162,7 @@ public class menuClient {
       
             Card winningCard2 = findWinningCard(secondCard1,secondCard2,secondCard3,secondCard4);
             System.out.println("Winner: " + winningCard2 );
-      
+            
             if (winningCard2==secondCard1){
                   player1.addQueue(secondCard1); player1.addQueue(secondCard2); player1.addQueue(secondCard3); player1.addQueue(secondCard4);
             } else if (winningCard2==secondCard2) {
