@@ -114,14 +114,12 @@ public class menuClient {
             Card secondCard3 = tempNode7.getCard();
             Card secondCard4 = tempNode8.getCard();
       
-            Card winningCard1 = findWinningCard(firstCard1,firstCard2,firstCard3,firstCard4);
-            
-      
-            
+            Card winningCard1 = findWinningCard(firstCard1,firstCard2,firstCard3,firstCard4);  //returns card obj
+            Players tempWinner = findWinner(winningCard1, firstCard1, firstCard2, firstCard3,firstCard4);  //returns players object
             
             
             
-            tableQueue.deQueue();tableQueue.deQueue();tableQueue.deQueue();tableQueue.deQueue();
+            
             player1.deQueue(); player2.deQueue(); player3.deQueue(); player4.deQueue();
             
             
@@ -272,7 +270,7 @@ public class menuClient {
       
       // new method for finding winner should accept winning card, and cards played in that round
       // should return winner name: String
-      public Players findWinner(Card winningCard1, Card c1, Card c2, Card c3, Card c4){
+      public static Players findWinner(Card winningCard1, Card c1, Card c2, Card c3, Card c4){
             Players winningPlayer = new Players("Winner");
             
             if (winningCard1==c1){
@@ -315,4 +313,11 @@ public class menuClient {
             
       }
  
+      public Queue clearTable(Queue tableQueue){
+            tableQueue.deQueue();
+            tableQueue.deQueue();
+            tableQueue.deQueue();
+            tableQueue.deQueue();
+            return tableQueue;
+      }
 }
