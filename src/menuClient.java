@@ -108,7 +108,7 @@ public class menuClient {
             Card secondCard3 = tempNode7.getCard();
             Card secondCard4 = tempNode8.getCard();
       
-            Card winningCard1 = findWinner(firstCard1,firstCard2,firstCard3,firstCard4);
+            Card winningCard1 = findWinningCard(firstCard1,firstCard2,firstCard3,firstCard4);
             Players winningPlayer = new Players("Winner");
             
             if (winningCard1==firstCard1){
@@ -151,7 +151,7 @@ public class menuClient {
             Card thirdCard3 = tempNode11.getCard();
             Card thirdCard4 = tempNode12.getCard();
       
-            Card winningCard2 = findWinner(secondCard1,secondCard2,secondCard3,secondCard4);
+            Card winningCard2 = findWinningCard(secondCard1,secondCard2,secondCard3,secondCard4);
             System.out.println("Winner: " + winningCard2 );
       
             if (winningCard2==secondCard1){
@@ -186,7 +186,7 @@ public class menuClient {
             Card fourthCard3 = thirdNode11.getCard();
             Card fourthCard4 = thirdNode12.getCard();
       
-            Card winningCard3 = findWinner(thirdCard1,thirdCard2,thirdCard3,thirdCard4);
+            Card winningCard3 = findWinningCard(thirdCard1,thirdCard2,thirdCard3,thirdCard4);
             System.out.println("Winner: " + winningCard3 );
       
             if (winningCard3==fourthCard1){
@@ -221,7 +221,7 @@ public class menuClient {
             Card fourthCard7 = thirdNode3.getCard();
             Card fourthCard8 = thirdNode4.getCard();
       
-            Card winningCard4 = findWinner(fourthCard1,fourthCard2,fourthCard3,fourthCard4);
+            Card winningCard4 = findWinningCard(fourthCard1,fourthCard2,fourthCard3,fourthCard4);
             System.out.println("Winner: " + winningCard4 );
       
             if (winningCard4==fourthCard1){
@@ -256,7 +256,7 @@ public class menuClient {
             Card fourth7 = fourthNode3.getCard();
             Card fourth8 = fourthNode4.getCard();
       
-            Card winningCard5 = findWinner(fourth5,fourth6,fourth7,fourth8);
+            Card winningCard5 = findWinningCard(fourth5,fourth6,fourth7,fourth8);
             System.out.println("Winner: " + winningCard5 );
       
             if (winningCard5==fourth5){
@@ -275,7 +275,7 @@ public class menuClient {
       
       }
 
-      public static Card findWinner(Card card1, Card card2, Card card3, Card card4) {
+      public static Card findWinningCard(Card card1, Card card2, Card card3, Card card4) {
             Card winningCard = null;
             //4 > 3
             if (Card.equalsTo(card1, card2)) { //card 1 > 2
