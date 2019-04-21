@@ -32,7 +32,6 @@ public class menuClient {
                   tempQ.addQueue(nullCard);
                   
             }
-            
       
             //System.out.println("Player1's hand: " + d.get(0) + " | " + d.get(1) + " | " + d.get(2) + " | " + d.get(3) + "\n\t |" + d.get(4) + " | " + d.get(5) + " | " + d.get(6) + " | " + d.get(7) + "\n\t | " + d.get(8) + " | " + d.get(9) + " | " + d.get(10) + " | " + d.get(11) + " | " + d.get(12));
             player1.addQueue(d.get(0)); player1.addQueue(d.get(1)); player1.addQueue(d.get(2)); player1.addQueue(d.get(3));player1.addQueue(d.get(4)); player1.addQueue(d.get(5)); player1.addQueue(d.get(6)); player1.addQueue(d.get(7));player1.addQueue(d.get(8)); player1.addQueue(d.get(9)); player1.addQueue(d.get(10)); player1.addQueue(d.get(11));player1.addQueue(d.get(12));
@@ -55,6 +54,8 @@ public class menuClient {
             Random rand = new Random();
             int randomPlayer = 1 + rand.nextInt(4 - 1);
             System.out.println("Player " + randomPlayer + " has been randomly selected to go first.");
+            //method for playOrder accepts randomPlayer int as input
+            //prints hands
             
       //----------------------- round 1
       
@@ -93,14 +94,7 @@ public class menuClient {
             
             System.out.println("\nTable : " + tableQueue + "\n");
       
-            QNode tempNode5 = player1.peek();   //prints first variable
-            QNode tempNode6 = player2.peek();
-            QNode tempNode7 = player3.peek();
-            QNode tempNode8 = player4.peek();
-            Card secondCard1 = tempNode5.getCard();
-            Card secondCard2 = tempNode6.getCard();
-            Card secondCard3 = tempNode7.getCard();
-            Card secondCard4 = tempNode8.getCard();
+            
       
             Card winningCard1 = findWinningCard(firstCard1,firstCard2,firstCard3,firstCard4);  //returns card obj
             Players tempWinner = findWinner(winningCard1, firstCard1, firstCard2, firstCard3,firstCard4);  //returns players object
@@ -113,10 +107,21 @@ public class menuClient {
             
             clearTable(tableQueue);
             
+        
+            
             /*player1.deQueue(); player2.deQueue(); player3.deQueue(); player4.deQueue();
             player1.deQueue(); player2.deQueue(); player3.deQueue(); player4.deQueue();*/
             
 /* ---------------------------------------------------
+
+            QNode tempNode5 = player1.peek();   //prints first variable
+            QNode tempNode6 = player2.peek();
+            QNode tempNode7 = player3.peek();
+            QNode tempNode8 = player4.peek();
+            Card secondCard1 = tempNode5.getCard();
+            Card secondCard2 = tempNode6.getCard();
+            Card secondCard3 = tempNode7.getCard();
+            Card secondCard4 = tempNode8.getCard();
             
             System.out.println("\n-----Round 2: \n");
             System.out.println("Player1's hand:  " + secondCard1 + player1.toString()); //prints hands
